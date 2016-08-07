@@ -1,0 +1,313 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.cover-heading {
+  margin-top: 5px;
+  font-size: 56px;
+  text-shadow: 6 3px 3px rgba(0,0,0,.5);
+}
+
+.cover-top {
+  text-shadow: 6 3px 3px rgba(0,0,0,.5);
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/*
+ * Header
+ */
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+input {
+  color: black;
+}
+
+
+/*
+ * Main page style
+ */
+
+.invitation-side {
+  font-size: 22px;
+  width: 100px;
+  text-align: left;
+  text-shadow: black 2px 2px;
+}
+
+.invitation-body {
+  text-align: left;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  font-size: 16px;
+  text-shadow: black 1px 1px;
+}
+
+.friends-of-ours {
+}
+
+.checkbox-header {
+  font-size: 21px;
+  text-shadow: black 1px 1px;
+}
+
+input[type=checkbox] {
+  margin-top: 8px;
+}
+
+img {
+  max-height: 200px;
+}
+
+
+/*
+* Mobile style
+*/
+
+ @media only screen and (max-device-width: 480px) {
+  body {
+    background-color: #009933;
+  }
+
+  #bgvid {
+    visibility: hidden;
+  }
+
+  .invitation-body, .invitation-side{
+    text-align: center;
+    width: 100%;
+  }
+
+  input[type=checkbox] {
+   margin-top: 8px;
+  }
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  position: relative;
+}
+div#shell {
+  display: block;
+  position: relative;
+  margin: 100px auto;
+  width: 318px;
+  height: 318px;
+}
+div#shell{
+  z-index: 1;
+}
+img#plax-logo {
+  position: absolute;
+  top: 125px;
+  left: 90px;
+  z-index: 3;
+}
+img#plax-sphere-1 {
+  position: absolute;
+  z-index: 4;
+  top: 189px;
+  left: 191px;
+}
+img#plax-sphere-2 {
+  position: absolute;
+  z-index: 2;
+  top: 49px;
+  left: 53px;
+}
+img#plax-sphere-3 {
+  position: absolute;
+  top: 35px;
+  left: 32px;
+  z-index: 1;
+}
+div#btns {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+div#btns a {
+  text-decoration:  none;
+  color: #333;
+}
+div#btns a.active {
+  font-weight: bold;
+}
+
+#bgvid {
+  position: fixed; top: 0; left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: url(/images/blur.svg#blur);
+}

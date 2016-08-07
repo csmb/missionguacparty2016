@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 class="cover-top">The Fiftieth Annual</h2>
+    <h1 class="cover-heading">Indian Summer Guac-Off</h1>
+    <dl class="dl-horizontal">
+      <dt class="invitation-side">About</dt>
+      <dd class="invitation-body">
+        The Annual Indian Summer Guac-off is a party that showcases the best guacamole's that the City has to offer.
+        The fine humans of San Francisco will get to decide who has the best guacamole in the City.
+        The winner to be crowned with the guacamole glory trophy, bragging rights until next Indian summer, the title of official "Guacamole of San Francisco", and a secret mystery prize!
+      </dd>
+
+      <dt class="invitation-side">Rules</dt>
+      <dd class="invitation-body">
+        Entry into the competition is free.
+        Your guacamole must use at least <%= @avocados %> avocados.
+        For all others wishing to attend, you must fairly judge the guacamole's presented.
+      </dd>
+
+      <dt class="invitation-side">When</dt>
+      <dd class="invitation-body">
+        September 10, 2016
+        <p>1pm - until the last chip is eaten</p>
+      </dd>
+
+      <dt class="invitation-side">Location</dt>
+      <dd class="invitation-body">
+        The Farmhouse Mansion<br>3340 Folsom St.<br>San Francisco, 94110
+      </dd>
+    </dl>
+
+    <form class="form-horizontal lead" role="form" action="/" method="post">
+      <div class="form-group">
+        <div class="col-sm-6 col-centered">
+          <input class="form-control" type="text" name="name" placeholder="Guacamole Champ" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-centered">
+          <input class="form-control" type="text" name="email" placeholder="guac-lover@gmail.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="checkbox-header">What are you bringing?</div>
+
+        <label class="checkbox-inline" for="guac">
+          <input type="checkbox" value="true" name="guac">Guac
+        </label>
+        <label class="checkbox-inline" for="beer">
+          <input type="checkbox" value="true" name="beer">Beer
+        </label>
+        <label class="checkbox-inline" for="other">
+          <input type="checkbox" value="true" name="other">Other
+        </label>
+      </div>
+      <button type="submit" class="btn btn-lg btn-success">Count me in!</button>
+    </form>
+  </body>
+</html>
+
+<!--
