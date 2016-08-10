@@ -4,19 +4,21 @@ require 'pg'
 require_relative './email'
 require_relative './models'
 
-welcome_email = ERB.new(IO.read('./views/emails/welcome.erb'))
+welcome_email = ERB.new(IO.read('./views/emails/welcome.html'))
+
 
 helpers do
   include Rack::Utils
 end
 
+enable :sessions
 set :public_folder, 'public'
 
 AVOCADO_COUNT = 7
 
 get '/' do
-  @avocados = AVOCADO_COUNT
-  erb :home, layout: :application
+  @avocado_count = AVOCADO_COUNT
+  erb :home
 end
 
 post '/' do
@@ -25,7 +27,7 @@ post '/' do
     Pony.mail to: enthusiast.email,
             from: "Mission Guac Party <missionguacparty@gmail.com>",
             subject: "Guacamole!",
-            body: welcome_email.result(binding)
+            html_body: welcome_email.result(binding)
     redirect '/partyon'
   else
     redirect '/'
@@ -33,9 +35,5 @@ post '/' do
 end
 
 get '/partyon' do
-  erb :success, layout: :application
-end
-
-get '/success' do
-  redirect '/partyon', 301
+  erb :success
 end
