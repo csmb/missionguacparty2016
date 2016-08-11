@@ -87,6 +87,8 @@ q:after {
     background-repeat: repeat;
     background-size: 50%;
     height: 735px;
+    width: 100%;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 .success-background {
@@ -177,7 +179,7 @@ span.superscript {
     background-repeat: no-repeat;
     background-position: center;
     width: 750px;
-    height: 235px;
+    min-height: 235px;
     background-size: 100%;
 }
 
@@ -191,16 +193,23 @@ span.superscript {
 
 .col {
     display: inline-block;
-    max-width: 360px;
-    margin-right: 45px;
+    width: 33%;
     vertical-align: top;
+    padding: 10px;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .col-sm {
-    float: right;
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    padding: 10px;
+    max-width: 200px;
+    min-width: 200px;
 }
 
-.col-sm a {
+.col a {
     color: #97bd33;
     text-decoration: none;
     font-weight: 600;
@@ -208,13 +217,14 @@ span.superscript {
     margin-top: 10px;
 }
 
-.col-sm a:hover {
+.col a:hover {
     color: #acd541;
     font-weight: 600;
 }
 
 .info-section {
     background-color: #221d00;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 .info {
@@ -236,6 +246,7 @@ span.superscript {
     background-color: #7e981a;
     height: 600px;
     margin: 0 auto;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 h2.the-rules {
@@ -283,6 +294,7 @@ label, .checkbox-header {
     display: block;
     text-align: left;
     margin-bottom: 10px;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 input {
@@ -376,7 +388,7 @@ label.checkbox-inline {
 }
 
 #pepper {
-    right: 40%;
+    right: 50%;
     bottom: 45%;
     width: 200px;
     position: absolute;
@@ -398,7 +410,7 @@ label.checkbox-inline {
 
 #tomato {
     left: 38%;
-    bottom: 69%;
+    bottom: 50%;
     width: 180px;
     position: absolute;
 }
