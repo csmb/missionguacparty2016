@@ -457,6 +457,11 @@ label.checkbox-inline {
 
 @media only screen and (max-width: 480px) {
     /* Styles */
+
+    body {
+        background-size: 100%;
+    }
+
     .hero {
         padding: 10px;
         height: 645px;
