@@ -26,7 +26,7 @@ post '/' do
   if enthusiast.save
     Pony.mail to: enthusiast.email,
             from: "Mission Guac Party <missionguacparty@gmail.com>",
-            subject: "Guacamole!",
+            subject: "Eat guacamole with friends and neighbors!",
             html_body: welcome_email.result(binding)
     redirect '/partyon'
   else

@@ -13,6 +13,8 @@ ol,
 li,
 h1,
 h2,
+h3,
+h4,
 label,
 input,
 .checkbox-header {
@@ -117,6 +119,7 @@ span.superscript {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .button {
@@ -225,8 +228,7 @@ a {
 }
 
 .info-section {
-    background-color: #221d00;
-    opacity: .9;
+    background-color: rgba(34, 29, 0, .9);
     cursor: url("../img/avotrans.ico"), default;
 }
 
@@ -245,12 +247,31 @@ a {
     word-wrap: normal;
 }
 
+.info-section.success .info {
+    max-width: 600px;
+}
+
+.info-intro h1 {
+    text-align: left;
+}
+
+.info-intro h2 {
+    line-height: 32px;
+}
+
 .form-section {
-    background-color: #7e981a;
-    opacity: .9;
+    background-color:  rgba(126, 152, 26, .9);
     height: 600px;
     margin: 0 auto;
     cursor: url("../img/avotrans.ico"), default;
+}
+
+.details {
+    border: 2px solid #97bd33;
+    padding: 30px;
+    background-color: rgba(255,255,255,.1);
+    text-align: center;
+    border-radius: 8px;
 }
 
 h2.the-rules {
@@ -341,11 +362,6 @@ input:-ms-input-placeholder {
     font-size: 18px;
     color: #98BB22;
     font-family: "filson-soft";
-}
-
-.img {
-  width: 25px;
-  height: 25px;
 }
 
 form {}
