@@ -2,6 +2,10 @@ body {
     font-family: "filson-soft", sans-serif background-color: #fbefe5;
     margin: 0;
     color: #f9e3d1;
+    background-image: url("../img/woodgrain.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
+
 }
 
 p,
@@ -9,7 +13,6 @@ ol,
 li,
 h1,
 h2,
-h4,
 label,
 input,
 .checkbox-header {
@@ -25,12 +28,6 @@ h2 {
     font-size: 24px;
     line-height: 24px;
     color: #acc749;
-}
-
-h4 {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
 }
 
 p,
@@ -83,20 +80,8 @@ q:after {
     display: block;
     padding: 35px 30px;
     margin: auto;
-    background-image: url("../img/woodgrain.jpg");
-    background-repeat: repeat;
-    background-size: 50%;
     height: 735px;
-    width: 100%;
     cursor: url("../img/avotrans.ico"), default;
-}
-
-.success-background {
-  background-image: url("../img/woodgrain.jpg");
-  background-repeat: repeat;
-  margin: auto;
-  display: block;
-  height: 100%;
 }
 
 .header-info {
@@ -115,12 +100,12 @@ q:after {
     font-weight: 600;
     text-transform: uppercase;
     float: left;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .header-time {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 40px;
+    line-height: 44px;
     float: right;
     font-weight: 600;
 }
@@ -130,6 +115,10 @@ span.superscript {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .button {
     padding: 24px 40px;
     text-align: center;
@@ -137,6 +126,7 @@ span.superscript {
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 .button--hero {
@@ -158,6 +148,16 @@ span.superscript {
     background-color: #afcf4f;
 }
 
+.button--hero:active {
+    background-color: #7ec325;
+}
+
+.button--hero:focus {
+    outline: none;
+}
+
+
+
 .button--submit {
     font-size: 18px;
     color: #faf2ec;
@@ -166,6 +166,15 @@ span.superscript {
     height: 60px;
     padding-top: 15px;
 }
+
+.button--submit:hover {
+    background-color: #df5518;
+}
+
+.button--submit:active {
+    background-color: #cd3e12;
+}
+
 
 #container {
     background-repeat: repeat;
@@ -178,8 +187,8 @@ span.superscript {
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 750px;
-    min-height: 235px;
+    max-width: 750px;
+    height: 235px;
     background-size: 100%;
 }
 
@@ -193,23 +202,16 @@ span.superscript {
 
 .col {
     display: inline-block;
-    width: 33%;
+    max-width: 360px;
+    margin-right: 45px;
     vertical-align: top;
-    padding: 10px;
-    max-width: 300px;
-    min-width: 300px;
 }
 
 .col-sm {
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-    padding: 10px;
-    max-width: 200px;
-    min-width: 200px;
+    float: right;
 }
 
-.col a {
+.col-sm a {
     color: #97bd33;
     text-decoration: none;
     font-weight: 600;
@@ -217,13 +219,14 @@ span.superscript {
     margin-top: 10px;
 }
 
-.col a:hover {
+.col-sm a:hover {
     color: #acd541;
     font-weight: 600;
 }
 
 .info-section {
     background-color: #221d00;
+    opacity: .9;
     cursor: url("../img/avotrans.ico"), default;
 }
 
@@ -244,6 +247,7 @@ span.superscript {
 
 .form-section {
     background-color: #7e981a;
+    opacity: .9;
     height: 600px;
     margin: 0 auto;
     cursor: url("../img/avotrans.ico"), default;
@@ -285,7 +289,8 @@ h2.the-location {
     margin-bottom: 0;
 }
 
-label, .checkbox-header {
+label,
+.checkbox-header {
     text-transform: uppercase;
     font-size: 18px;
     color: #221d00;
@@ -318,12 +323,6 @@ input::-webkit-input-placeholder {
     font-family: "filson-soft";
 }
 
-.inner-editor {
-    font-size: 18px;
-    color: #98BB22;
-    font-family: "filson-soft";
-  }
-
 input:-moz-placeholder {
     /* Firefox 18- */
     font-size: 18px;
@@ -342,6 +341,11 @@ input:-ms-input-placeholder {
     font-size: 18px;
     color: #98BB22;
     font-family: "filson-soft";
+}
+
+.img {
+  width: 25px;
+  height: 25px;
 }
 
 form {}
@@ -365,8 +369,9 @@ form {}
 .form-container h2 {
     text-align: left;
     font-size: 30px;
-    color: #221d00;
+    color: #fff;
     margin-bottom: 54px;
+
 }
 
 input.checkbox {
@@ -383,12 +388,8 @@ label.checkbox-inline {
     font-weight: 400;
 }
 
-.share {
-  text-align: center;
-}
-
 #pepper {
-    right: 50%;
+    right: 40%;
     bottom: 45%;
     width: 200px;
     position: absolute;
@@ -410,7 +411,7 @@ label.checkbox-inline {
 
 #tomato {
     left: 38%;
-    bottom: 50%;
+    bottom: 69%;
     width: 180px;
     position: absolute;
 }
@@ -434,4 +435,136 @@ label.checkbox-inline {
     bottom: 41%;
     width: 272px;
     position: absolute;
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 480px) {
+    /* Styles */
+    .hero {
+        padding: 10px;
+        height: 645px;
+    }
+    .title {
+        margin: 70px auto 0;
+        width: 350px;
+        height: 107px;
+    }
+    .button {
+        padding: 20px 40px;
+    }
+    .button--hero {
+        width: 220px;
+        margin-top: 10px;
+    }
+    .header-info {
+        text-align: center;
+        margin: -450px auto 0;
+    }
+    .header-free {
+        float: inherit;
+        font-size: 58px;
+    }
+    .header-time {
+        float: inherit;
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .info {
+        padding: 15px 15px 30px 15px;
+    }
+    .info h1 {
+        margin-bottom: 20px;
+    }
+    h1 {
+        line-height: 40px;
+        font-size: 26px;
+    }
+    .col {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .col-sm {
+        float: inherit;
+    }
+    h2.the-rules {
+        padding-left: 100px;
+        padding-top: 52px;
+        background-size: 31%;
+        height: 57px;
+        margin-bottom: -18px;
+        font-size: 30px;
+        width: 160px;
+    }
+    h2.the-judging {
+        padding-left: 100px;
+        padding-top: 52px;
+        background-size: 26%;
+        height: 57px;
+        margin-bottom: -18px;
+        font-size: 30px;
+        width: 200px;
+    }
+    h2.the-location {
+        font-size: 30px;
+        padding-left: 100px;
+        padding-top: 52px;
+        background-size: 25%;
+        height: 57px;
+        margin-bottom: -18px;
+        width: 200px;
+    }
+    #avocado {
+        right: 13%;
+        bottom: 60%;
+        width: 262px;
+    }
+    #onion {
+        bottom: 61%;
+        right: 16%;
+        width: 231px;
+    }
+    #garlic {
+        bottom: 69%;
+        right: 23%;
+    }
+    #tomato {
+        left: 31%;
+        bottom: 73%;
+        width: 180px;
+    }
+    #lime {
+        left: 24%;
+        bottom: 63%;
+    }
+    #cilantro {
+        left: 16%;
+        bottom: 55%;
+        width: 219px;
+    }
+    #pepper {
+        right: 30%;
+        bottom: 56%;
+    }
+    .form-section {
+        padding: 15px;
+        height: auto;
+    }
+    .form-group {
+        margin-right: 0;
+        width: 100%;
+    }
+    .form-container h2 {
+        line-height: 32px;
+    }
+    form {
+        width: 100%;
+    }
+    label {
+        margin-right: 0;
+    }
+    input {
+        width: 100%;
+    }
 }

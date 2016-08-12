@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/png" href="avotrans.ico"/>
     <script src="https://use.typekit.net/afv8npa.js"></script>
     <script>
     try {
@@ -13,6 +15,7 @@
     } catch (e) {}
     </script>
     <title>Guac Party!</title>
+
 </head>
 
 <body>
@@ -46,7 +49,7 @@
                 <br><span><p><em> * until the last chip is eaten</em></p></span>
             </div>
         </div>
-        <div class="button button--hero">Count me in!</div>
+        <div><a href="#form" class="button button--hero">Count me in!</a></div>
     </div>
     <div class="info-section">
         <div class="info">
@@ -66,7 +69,7 @@
                 <div class="col">
                     <h2 class="the-judging">The Judging</h2>
                     <p>You decide who has the best guacamole in The City. The winner to be crowned with the Guacamole Glory Trophy, bragging rights until next Indian summer, the title of official
-                        <q>Guacamole of San Francisco,</q>and a secret mystery prize!</p>
+                        <q>Guacamole of San Francisco,</q> and a secret mystery prize!</p>
                 </div>
                 <div class="col-sm">
                     <h2 class="the-location">The Location</h2>
@@ -79,9 +82,9 @@
             </div>
         </div>
     </div>
-    <div class="form-section">
-        <div class="form-container" id="lets-guac">
-            <h2 class="confirm">Let us know you&#39;re planning to come.</h2>
+    <div class="form-section" id="form">
+        <div class="form-container">
+            <h2>Let us know you&#39;re planning to come.</h2>
             <form class="form-horizontal lead" role="form" action="/" method="post">
                 <div class="form-group">
                     <label class="form-label">Your Name</label>
@@ -106,11 +109,24 @@
                 <button type="submit" class="button button--submit">Count me in!</button>
             </form>
         </div>
+
     </div>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/jquery.parallax.js"></script>
     <script>
     $('#scene').parallax();
+
+    $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+    });
     </script>
 </body>
 
