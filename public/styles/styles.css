@@ -121,6 +121,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .button {
     padding: 24px 40px;
     text-align: center;
@@ -158,8 +162,6 @@ a {
     outline: none;
 }
 
-
-
 .button--submit {
     font-size: 18px;
     color: #faf2ec;
@@ -176,7 +178,6 @@ a {
 .button--submit:active {
     background-color: #cd3e12;
 }
-
 
 #container {
     background-repeat: repeat;
@@ -259,7 +260,7 @@ a {
 }
 
 .form-section {
-    background-color:  rgba(126, 152, 26, .9);
+    background-color: rgba(126, 152, 26, .9);
     height: 600px;
     margin: 0 auto;
     cursor: url("../img/avotrans.ico"), default;
@@ -268,7 +269,7 @@ a {
 .details {
     border: 2px solid #97bd33;
     padding: 30px;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255, 255, 255, .1);
     text-align: center;
     border-radius: 8px;
 }
@@ -386,7 +387,6 @@ form {}
     font-size: 30px;
     color: #fff;
     margin-bottom: 54px;
-
 }
 
 input.checkbox {
@@ -472,6 +472,9 @@ label.checkbox-inline {
     .button--hero {
         width: 220px;
         margin-top: 10px;
+    }
+    button.button.button--submit {
+        padding-top: 16px;
     }
     .header-info {
         text-align: center;
