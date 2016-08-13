@@ -152,6 +152,7 @@ a:hover {
 
 .button--hero:hover {
     background-color: #afcf4f;
+    text-decoration: none;
 }
 
 .button--hero:active {
