@@ -92,16 +92,16 @@ q:after {
     font-family: "filson-soft";
     color: #221d00;
     margin: -510px auto 0;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .header-free {
-    font-size: 72px;
+    text-align: center;
+    font-size: 32px;
     line-height: 40px;
     font-weight: 600;
     text-transform: uppercase;
     float: left;
-    padding-top: 30px;
 }
 
 .header-time {
@@ -109,6 +109,7 @@ q:after {
     line-height: 44px;
     float: right;
     font-weight: 600;
+    padding-top: 8px;
 }
 
 span.superscript {
