@@ -42,6 +42,8 @@ ol {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 ol {
@@ -277,6 +279,36 @@ a:hover {
     border-radius: 8px;
 }
 
+.sponsors-section {
+    background-color: #fbf3ed;
+    padding: 50px 0;
+}
+
+.sponsors {
+    max-width: 1000px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.sponsor {
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-right: 50px;
+    background-position: center;
+}
+
+.sponsor-bff {
+    background-image: url("https://cldup.com/xI6cM8Bhw8.png");
+}
+
+.sponsor-avocados {
+    background-image: url("https://cldup.com/XunwHcP6wp.png");
+}
+
 h2.the-rules {
     background-image: url(../img/sm_tomato.png);
     background-repeat: no-repeat;
@@ -460,11 +492,9 @@ label.checkbox-inline {
 
 @media only screen and (max-width: 480px) {
     /* Styles */
-
     body {
         background-size: 200%;
     }
-
     .hero {
         padding: 20px;
         height: 645px;
@@ -501,6 +531,10 @@ label.checkbox-inline {
     }
     .info h1 {
         margin-bottom: 20px;
+    }
+    .sponsor {
+        display: block;
+        margin: 0 auto;
     }
     h1 {
         line-height: 40px;
