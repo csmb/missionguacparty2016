@@ -37,3 +37,11 @@ end
 get '/partyon' do
   erb :success
 end
+
+get '/definitelynotthestatspage' do
+  @total_guest_count = GuacamoleEnthusiasts.count
+  @guacamole_count   = GuacamoleEnthusiasts.count(:guac => 't')
+  @beer_count        = GuacamoleEnthusiasts.count(:beer => 't')
+  @friend_count      = GuacamoleEnthusiasts.count(:other => 't')
+  erb :stats
+end
