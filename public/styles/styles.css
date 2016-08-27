@@ -324,6 +324,27 @@ a:hover {
 .sponsor-bff {
     background-image: url("../img/bff.png");
 }
+.sponsor-noisepop {
+    background-image: url("../img/noisepop.png");
+}
+.sponsor-4505 {
+    background-image: url("../img/4505.png");
+}
+.sponsor-fdr {
+    background-image: url("../img/fdr.png");
+}
+.sponsor-gnl {
+    background-image: url("../img/george_and_lennie.png");
+}
+.sponsor-roll {
+    background-image: url("../img/rollovereasy.png");
+}
+.sponsor-spincity {
+    background-image: url("../img/spincity.png");
+}
+.sponsor-wildsf {
+    background-image: url("../img/wildsf.png");
+}
 
 h2.the-rules {
     background-image: url(../img/sm_tomato.png);
