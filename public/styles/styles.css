@@ -291,13 +291,14 @@ a:hover {
 }
 
 .sponsor {
-    height: 130px;
-    width: 130px;
+    height: 140px;
+    width: 140px;
     background-size: contain;
     background-repeat: no-repeat;
     text-indent: -9999px;
     display: inline-block;
     margin-right: 30px;
+    margin-bottom: 30px;
     background-position: center;
 }
 
