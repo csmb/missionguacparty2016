@@ -346,6 +346,9 @@ a:hover {
 .sponsor-wildsf {
     background-image: url("../img/wildsf.png");
 }
+.sponsor-woodennickel {
+    background-image: url("../img/woodennickel.jpg");
+}
 
 h2.the-rules {
     background-image: url(../img/sm_tomato.png);
@@ -474,6 +477,11 @@ label.checkbox-inline {
     color: #fbf3ed;
     font-size: 18px;
     font-weight: 400;
+}
+
+h1#thanks {
+    color: #221d00;
+    margin-bottom: 90px;
 }
 
 #pepper {
