@@ -23,7 +23,7 @@ describe 'Guac Party! homepage' do
 
   it 'should create a new user on sign up' do
     post '/', params={ name: 'Champ', email: 'GuacamoleChamp@avocado.net', guac: true, beer: false, other: false }
-    Partier.count.must_be :==, +1
+    GuacamoleEnthusiasts.count.must_be :==, +1
   end
 end
 
@@ -41,9 +41,15 @@ describe 'Post registration success page' do
   end
 end
 
-describe 'redirects' do
-  it 'should send folks to \'partyon\'who bookmarked \'success\'' do
-    get '/success'
-    last_response.header['location'].must_include '/partyon'
+describe 'Secret stats page' do
+  before(:each) do
+    get '/definitelynotthestatspage'
+  end
+
+  it 'should give count of the attendees, guacamole, beer, and friends' do
+    last_response.body.must_include 'folks have RSVP'
+    last_response.body.must_include 'bringing guacamole'
+    last_response.body.must_include 'bring beer'
+    last_response.body.must_include 'bring friends'
   end
 end
