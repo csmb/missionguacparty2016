@@ -25,9 +25,9 @@ post '/' do
   enthusiast = GuacamoleEnthusiasts.new(params)
   if enthusiast.save
     Pony.mail to: enthusiast.email,
-            from: "Mission Guac Party <missionguacparty@gmail.com>",
-            subject: "High Five and Seven Avocados Ago",
-            html_body: welcome_email.result(binding)
+              from: "Mission Guac Party <missionguacparty@gmail.com>",
+              subject: "High Five and Seven Avocados Ago",
+              html_body: welcome_email.result(binding)
     redirect '/partyon'
   else
     redirect '/'

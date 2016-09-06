@@ -1,79 +1,75 @@
 <html>
-<!DOCTYPE html>
-
-<head>
+  <!DOCTYPE html>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="shortcut icon" type="image/png" href="avotrans.ico" />
     <script src="https://use.typekit.net/afv8npa.js"></script>
     <script>
-    try {
+      try {
         Typekit.load({
-            async: true
+          async: true
         });
-    } catch (e) {}
+      } catch (e) {}
     </script>
     <title>Guac Party!</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="info-section success">
-        <div class="info">
-            <div class="info-intro">
-                <h1>Welcome to the guacamole life!</h1>
-                <h2>We're excited you're coming! Please, feel free to invite friends, lovers, pets, and cousins!</h2>
-                <div class="details">
-                    <h2>5th Annual Indian Summer Guac-Off!</h3>
-                    <h4>Date: Saturday, September 10th, 2016.</h4>
-                    <h4>Time: 1pm - until the last chip is eaten</h4>
-                    <h4>Location: <a href="https://goo.gl/maps/U4Y644paVPM2">3340 Folsom St. San Francisco, 94110 &#10154;</a></h4>
-                </div>
-                <h2>Feel free to share this on Twitter, I mean, who doesn't love a guacamole party!?</h2>
-                <div class="share">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://guacamole.expert" data-text="I'm going to the Guacamole Party!" data-hashtags="guacparty" data-count="none" data-size="large">Tweet</a>
-                </div>
-            </div>
-            <script>
-            ! function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');
-            </script>
+      <div class="info">
+        <div class="info-intro">
+          <h1>Welcome to the guacamole life!</h1>
+          <h2>We're excited you're coming! Please, feel free to invite friends, lovers, pets, and cousins!</h2>
+          <div class="details">
+            <h2>5th Annual Indian Summer Guac-Off!</h3>
+            <h4>Date: Saturday, September 10th, 2016.</h4>
+            <h4>Time: 1pm - until the last chip is eaten</h4>
+            <h4>Location: <a href="https://goo.gl/maps/U4Y644paVPM2">3340 Folsom St. San Francisco, 94110 &#10154;</a></h4>
+          </div>
+          <h2>Feel free to share this on Twitter, I mean, who doesn't love a guacamole party!?</h2>
+          <div class="share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://guacamole.expert" data-text="I'm going to the Guacamole Party!" data-hashtags="guacparty" data-count="none" data-size="large">Tweet</a>
+          </div>
         </div>
-        <div class="container" id="container">
-            <ul id="scene" class="scene">
-                <li data-depth="14" class="layer"><img id="pepper" src="img/pepper.png"></li>
-                <li data-depth="11" class="layer"><img id="cilantro" src="img/cilantro.png"></li>
-                <li data-depth="9" class="layer"><img id="lime" src="img/lime.png"></li>
-                <li data-depth="7" class="layer"><img id="tomato" src="img/tomato.png"></li>
-                <li data-depth="5" class="layer"><img id="garlic" src="img/garlic.png"></li>
-                <li data-depth="3" class="layer"><img id="onion" src="img/onion.png"></li>
-                <li data-depth="1" class="layer"><img id="avocado" src="img/avocado.png"></li>
-            </ul>
-        </div>
-        <script src="scripts/jquery.js"></script>
-        <script src="scripts/jquery.parallax.js"></script>
         <script>
-        $('#scene').parallax();
-
-        $('a[href^="#"]').on('click', function(event) {
-
-            var target = $(this.getAttribute('href'));
-
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1000);
+        ! function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = p + '://platform.twitter.com/widgets.js';
+              fjs.parentNode.insertBefore(js, fjs);
             }
-
-        });
+          }(document, 'script', 'twitter-wjs');
         </script>
+      </div>
+      <div class="container" id="container">
+        <ul id="scene" class="scene">
+          <li data-depth="14" class="layer"><img id="pepper" src="img/pepper.png"></li>
+          <li data-depth="11" class="layer"><img id="cilantro" src="img/cilantro.png"></li>
+          <li data-depth="9" class="layer"><img id="lime" src="img/lime.png"></li>
+          <li data-depth="7" class="layer"><img id="tomato" src="img/tomato.png"></li>
+          <li data-depth="5" class="layer"><img id="garlic" src="img/garlic.png"></li>
+          <li data-depth="3" class="layer"><img id="onion" src="img/onion.png"></li>
+          <li data-depth="1" class="layer"><img id="avocado" src="img/avocado.png"></li>
+        </ul>
+      </div>
+      <script src="scripts/jquery.js"></script>
+      <script src="scripts/jquery.parallax.js"></script>
+      <script>
+      $('#scene').parallax();
+
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+      </script>
     </div>
-</body>
+  </body>
