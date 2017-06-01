@@ -14,7 +14,7 @@ end
 enable :sessions
 set :public_folder, 'public'
 
-AVOCADO_COUNT = 7
+AVOCADO_COUNT = 8
 
 get '/' do
   @avocado_count = AVOCADO_COUNT
