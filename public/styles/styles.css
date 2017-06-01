@@ -282,6 +282,7 @@ a:hover {
 .sponsors-section {
     background-color: #fbf3ed;
     padding: 50px 0;
+    cursor: url("../img/avotrans.ico"), default;
 }
 
 .sponsors {
