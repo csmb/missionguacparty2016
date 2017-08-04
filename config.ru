@@ -10,7 +10,7 @@ get %r{(.*)} do
     ""
   else
     # Redirect to www subdomain
-    rewritten_host = "https:\/\/www.#{host}"
+    rewritten_host = "www.#{host}"
     rewritten_uri = [protocol, rewritten_host, query].join
     redirect rewritten_uri, 301
   end
