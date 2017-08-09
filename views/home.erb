@@ -22,132 +22,171 @@
     </script>
     <title>Guac Party!</title>
   </head>
-  <body>
-    <div class="hero">
-      <div class="title">
-        <div class="title-year">
-          Indian Summer
+
+<body>
+    <div class="nav">
+        <div class="columns-12">
+            <div class="nav-headline">Eat guacamole with your friend and neighbors</div>
+            <div class="nav-links">
+                <a href="#therules" class="nav-link">The Rules</a>
+                <a href="#form" class="nav-button">Count me in</a>
+            </div>
         </div>
-        <div class="title-name">
-          Guac-Off
-        </div>
-      </div>
-      <div class="container" id="container">
-        <ul id="scene" class="scene">
-          <li data-depth="13" class="layer"><img id="pepper" src="img/pepper.png"></li>
-          <li data-depth="11" class="layer"><img id="cilantro" src="img/cilantro.png"></li>
-          <li data-depth="9" class="layer"><img id="lime" src="img/lime.png"></li>
-          <li data-depth="7" class="layer"><img id="tomato" src="img/tomato.png"></li>
-          <li data-depth="5" class="layer"><img id="garlic" src="img/garlic.png"></li>
-          <li data-depth="3" class="layer"><img id="onion" src="img/onion.png"></li>
-          <li data-depth="1" class="layer"><img id="avocado" src="img/avocado.png"></li>
-        </ul>
-      </div>
-      <div class="header-info">
-        <div class="header-free">
-        Eat guacamole with your friends and neighbors
-        </div>
-        <div class="header-time">
-          Sept. 9<span class="superscript">th</span>
-          <br>1pm &mdash; ?*
-          <br><span><p><em> * until the last chip is eaten</em></p></span>
-        </div>
-      </div>
-      <div><a href="#form" class="button button--hero">Count me in!</a></div>
     </div>
-    <div class="info-section">
-      <div class="info">
-        <div class="info-intro">
-        <h1>The 6<span class="superscript">th</span> Annual Indian Summer Guac-Off is a party that showcases the best guacamoles that The City has to offer.</h1>
+    <div class="hero">
+        <video id="herovideo" autoplay loop="">
+            <source src="/public/img/guac_timelapse.mov" type="video/mp4">
+        </video>
+        <div class="logo">6th Annual Indian Summer Guac Off!</div>
+        <a href="#" class="play-button">Watch the timelapse from last year.</a>
+        <a href="#" class="caret">tell me more</a>
+
+    </div>
+    <div class="intro columns-12">
+        <h1>The 6th Annual Indian Summer Guac-Off showcases The City's best guacamole.</h1>
+        <div class="whenwhere">
+            <div class="left">
+                <h2>When?</h2>
+                <h3>September 9th<br>
+                1pm until the last chip<br>
+                Judging ends at 4pm</h3>
+            </div>
+            <div class="right">
+                <h2>Where?</h2>
+                <h3><a href="https://goo.gl/maps/6LrRvn3rrJA2" target="_blank">Bernal Heights<br>
+            Farmhouse Mansion<br>
+            3340 Folsom St.</a></h3>
+            </div>
         </div>
-        <div class="columns">
-          <div class="col">
-            <h2 class="the-rules">The Rules</h2>
-            <ol>
-              <li>Your guacamole must use <strong>at least 7 avocados</strong>.</li>
-              <li>If you don&#39;t bring a guacamole, you&#39;re encouraged to bring beer.</li>
-              <li>No matter what you decide to bring, bring your friends!</li>
-              <li>We'll provide the chips, <em>mystery prizes</em>, and the coveted <strong>Guacamole Glory Trophy</strong>.</li>
-            </ol>
-          </div>
-          <div class="col">
-            <h2 class="the-judging">The Judging</h2>
-            <p>You decide who has the best guacamole in The City. The winner to be crowned with the Guacamole Glory Trophy, bragging rights until next Indian summer, the title of official
-              <q>Guacamole of San Francisco,</q> and a secret mystery prize!</p>
-          </div>
-          <div class="col-sm">
-            <h2 class="the-location">The Location</h2>
-            <p>The Farmhouse Mansion
-              <br>3340 Folsom St.
-              <br>San Francisco, 94110
-              <br><a href="https://goo.gl/maps/U4Y644paVPM2">Get Directions &#10154;</a>
-              </p>
-          </div>
+    </div>
+    <div class="ingredients"></div>
+    <div class="details" id="therules">
+        <div class="columns-12">
+            <div class="detail">
+                <div class="detail-name">
+                    <h2 class="red">The Rules</h2>
+                </div>
+                <div class="detail-info">
+                    <p><strong>You must use at least 8 avocados</strong><br>
+                    Bring something! Guacamole, beer or friends. We’ll provide the chips, the prizes, the mariachi band and of course… the coveted Guacamole Glory Trophy.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="detail-name">
+                    <h2 class="green">The Judging</h2>
+                </div>
+                <div class="detail-info">
+                    <p class="detail-info"><span class="big-p">Guacamole is a democracy.</span>
+                        <br>
+                        <br> You and your neighbors ares the judges when it comes to this competition, and you’ll be asked to vote with your eyes, your heart, and of course, your taste buds. The winner to be crowned with the Guacamole Glory Trophy, bragging rights until next Indian summer, the title of “San Francisco’s Official Guacamole”, and a secret mystery prize!
+                    </p>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="detail-name">
+                    <h2 class="brown">The Schedule</h2>
+                </div>
+                <div class="detail-info">
+                    <ol class="sched">
+                        <li><span class="time">1:00 – 2:30</span> Showcase Guacamoles</li>
+                        <li><span class="time">2:30 - 3:30</span> Judging</li>
+                        <li><span class="time">3:30 - 4:00</span> Winners Announced</li>
+                        <li>Party ends when the last chip is gone!</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="awards-section">
+        <div class="columns-12">
+            <h1>Glorious Prizes</h1>
+            <ul>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Commitment to Kids</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Behind the Scenes Award</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Top Team</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Teamwork Award</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Mission Possible Award</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Customer Service Award</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Pat on the Back Award</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Volunteer of the Year</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Teacher of the Year</p>
+                </li>
+                <li class="award">
+                    <span class="award-icon"></span>
+                    <p class="award-name">Teacher's Aid of the Year</p>
+                </li>
+            </ul>
+            <p class="legal">*awards subject to being made up on the spot</p>
+        </div>
     </div>
     <div class="form-section" id="form">
-      <div class="form-container">
-        <h2>Let us know you&#39;re planning to come.</h2>
-        <form class="form-horizontal lead" role="form" action="/" method="post">
-          <div class="form-group">
-            <label class="form-label">Your Name</label>
-            <input class="form-control" type="text" name="name" placeholder="Guacamole Champ" required="">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Your Email</label>
-            <input class="form-control" type="email" name="email" placeholder="guac-lover@gmail.com" required="">
-          </div>
-          <div class="form-group">
-            <div class="checkbox-header">What are you bringing?</div>
-            <label class="checkbox-inline">
-              <input type="checkbox" class="checkbox" value="true" name="guac">The City&#39;s Best Guacamole
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" class="checkbox" value="true" name="beer">Something to drink
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" class="checkbox" value="true" name="other">All my friend(s)
-            </label>
-          </div>
-          <button type="submit" class="button button--submit">Count me in!</button>
-        </form>
-      </div>
+        <div class="form-container columns-12">
+            <h1>So you’re coming, right?<br> Great. RSVP!</h1>
+            <form class="form-horizontal" role="form" action="http://www.guacamole.expert/" method="post">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input class="form-control" type="text" name="name" placeholder="Guacamole Champ" required="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input class="form-control" type="email" name="email" placeholder="guac-lover@gmail.com" required="">
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-header">What are you bringing?</div>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="checkbox" value="true" name="guac">Guacamole
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="checkbox" value="true" name="beer">Beer
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="checkbox" value="true" name="other">Friend(s)
+                    </label>
+                </div>
+                <button type="submit" class="button button--submit">Count me in!</button>
+            </form>
+        </div>
     </div>
+    <div class="ingredients"></div>
     <div class="sponsors-section">
-      <div class="sponsors">
-        <h1 id="thanks">Thanks to our lovely local sponsors</h1>
-        <ul>
-          <li class="sponsor sponsor-bff">BFF.fm</li>
-          <li class="sponsor sponsor-dsf">DSF Clothing</li>
-          <li class="sponsor sponsor-firefly">Firefly Restaurant</li>
-          <li class="sponsor sponsor-fortpoint">Fort Point Beer Co.</li>
-          <li class="sponsor sponsor-tripps">American Tripps</li>
-          <li class="sponsor sponsor-workshop">Workshop</li>
-          <li class="sponsor sponsor-noisepop">Noise Pop</li>
-          <li class="sponsor sponsor-4505">4505</li>
-          <li class="sponsor sponsor-fdr">Ferment Drink Repeat</li>
-          <li class="sponsor sponsor-gnl">George and Lennie</li>
-          <li class="sponsor sponsor-roll">Roll Over Easy</li>
-          <li class="sponsor sponsor-spincity">Spin City</li>
-          <li class="sponsor sponsor-wildsf">Wild SF Walking Tours</li>
-          <li class="sponsor sponsor-woodennickel">The Wooden Nickel</li>
-        </ul>
-      </div>
+        <h1>Special thanks to our amazing local sponsors</h1>
+        <div class="sponsors">
+            <ul>
+                <li class="sponsor sponsor-bff">BFF.fm</li>
+                <li class="sponsor sponsor-dsf">DSF Clothing</li>
+                <li class="sponsor sponsor-firefly">Firefly Restaurant</li>
+                <li class="sponsor sponsor-fortpoint">Fort Point Beer Co.</li>
+                <li class="sponsor sponsor-tripps">American Tripps</li>
+                <li class="sponsor sponsor-workshop">Workshop</li>
+            </ul>
+        </div>
     </div>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.parallax.js"></script>
-    <script>
-    $('#scene').parallax();
-    $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-    });
-    </script>
-  </body>
+</body>
+
 </html>
