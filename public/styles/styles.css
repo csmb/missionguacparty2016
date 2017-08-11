@@ -638,12 +638,16 @@ label.checkbox-inline {
     }
 
     .logo {
-        width: 480px;
+        width: auto;
     }
 
     .intro {
         height: auto;
         padding-bottom: 20px;
+    }
+
+    .intro h2{
+         width: auto;
     }
 
     .right {
@@ -661,6 +665,11 @@ label.checkbox-inline {
         flex: none;
         margin: 0 0 20px;
     }
+
+    .ingredients {
+        width: auto;
+    }
+
     .detail-info {
         flex: auto;
         text-align: left;
