@@ -24,6 +24,14 @@ input,
     font-family: "filson-soft", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    hyphens: none;
+}
+
 h1 {
     font-size: 40px;
     line-height: 52px;
@@ -103,8 +111,8 @@ a:hover {
 
 
 .nav {
-    background: #93D43F;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    background-color: rgba(147, 212, 63, .9);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     font-family: "filson-soft";
@@ -114,13 +122,13 @@ a:hover {
     color: #FCFFEC;
     height: 60px;
     z-index: 999;
-    opacity: .9;
+    padding: 0 40px;
 }
 
 .nav-headline {
     display: inline-block;
     float: left;
-    padding-top: 18px;
+    padding-top: 20px;
 }
 
 .nav-links {
@@ -162,6 +170,7 @@ a.nav-link:hover {
 .columns-12 {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .container {
@@ -241,7 +250,7 @@ video {
 
 .intro {
     height: 600px;
-    padding: 80px 0px;
+    padding-top: 40px;
 }
 
 .intro h1 {
@@ -594,129 +603,71 @@ label.checkbox-inline {
 
 
 
+
+/* Weird inbetween phase */
+
+@media only screen and (max-width: 880px) {
+    .nav-headline {
+        font-size: 14px;
+    }
+    .nav-link {
+        margin-right: 4px;
+    }
+    a.nav-button {
+        padding: 10px 14px;
+    }
+}
+
+
+
 /* Smartphones (portrait) ----------- */
 
-@media only screen and (max-width: 480px) {
-    /* Styles */
-    body {
-        background-size: 200%;
-    }
-    h1 {
-        line-height: 40px;
-        font-size: 26px;
+@media only screen and (max-width: 800px) {
+    .nav-headline {
+        display: none;
     }
 
-    h2.the-rules {
-        padding-left: 100px;
-        padding-top: 52px;
-        background-size: 31%;
-        height: 57px;
-        margin-bottom: -18px;
-        font-size: 30px;
-        width: 160px;
-    }
-    h2.the-judging {
-        padding-left: 100px;
-        padding-top: 52px;
-        background-size: 26%;
-        height: 57px;
-        margin-bottom: -18px;
-        font-size: 30px;
-        width: 200px;
-    }
-    h2.the-location {
-        font-size: 30px;
-        padding-left: 100px;
-        padding-top: 52px;
-        background-size: 25%;
-        height: 57px;
-        margin-bottom: -18px;
-        width: 200px;
-    }
-
-    .hero {
-        padding: 20px;
-        height: 645px;
-    }
-    .title {
-        margin: 70px auto 0;
-        width: 350px;
-        height: 107px;
-    }
-    .button {
-        padding: 20px 40px;
-    }
-    .button--hero {
-        width: 220px;
-        margin-top: 10px;
-    }
-    button.button.button--submit {
-        padding-top: 16px;
-    }
-
-    .sponsor {
+    .nav-links {
+        text-align: center;
+        float: none;
         display: block;
-        margin: 0 auto;
     }
 
-    .col {
-        margin-right: 0;
-        max-width: 100%;
-    }
-    .col-sm {
-        float: inherit;
+    .columns-12 {
+        padding: 0 15px;
     }
 
-    #avocado {
-        right: 13%;
-        bottom: 60%;
-        width: 262px;
+    .logo {
+        width: 480px;
     }
-    #onion {
-        bottom: 61%;
-        right: 16%;
-        width: 231px;
-    }
-    #garlic {
-        bottom: 69%;
-        right: 23%;
-    }
-    #tomato {
-        left: 31%;
-        bottom: 73%;
-        width: 180px;
-    }
-    #lime {
-        left: 24%;
-        bottom: 63%;
-    }
-    #cilantro {
-        left: 16%;
-        bottom: 55%;
-        width: 219px;
-    }
-    #pepper {
-        right: 30%;
-        bottom: 56%;
-    }
-    .form-section {
-        padding: 15px;
+
+    .intro {
         height: auto;
+        padding-bottom: 20px;
     }
-    .form-group {
-        margin-right: 0;
-        width: 100%;
+
+    .right {
+        margin: 0;
     }
-    .form-container h2 {
-        line-height: 32px;
+
+    .detail {
+        display: block;
     }
-    form {
-        width: 100%;
+
+    .detail-name {
+        text-align: left;
+        width: auto;
+        float: none;
+        flex: none;
+        margin: 0 0 20px;
     }
-    label {
-        margin-right: 0;
+    .detail-info {
+        flex: auto;
+        text-align: left;
+        float: none;
+        max-width: fit-content;
     }
-    input {
-        width: 100%;
+    .form-container {
+        margin-bottom: 100px;
     }
 }
