@@ -104,6 +104,10 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    padding-bottom: 10px;
+}
+
 .green {
     color: #92D13E;
 }
@@ -212,7 +216,9 @@ video {
     min-width: 100%;
     transform: translateX(-50%);
     mix-blend-mode: multiply;
-    background-image: url(../img/hero_video@2x.jpg);
+    background-image: url(../img/guac_timelapse.gif);
+    background-size: 110%;
+    background-repeat: no-repeat;
 }
 
 .logo {
@@ -317,6 +323,10 @@ video {
     font-size: 22px;
     font-weight: 800;
     padding-bottom: 20px;
+}
+
+.time {
+    font-weight: 800;
 }
 
 .awards-section {
@@ -633,12 +643,21 @@ label.checkbox-inline {
         display: block;
     }
 
+    .hero {
+        max-height: 600px
+    }
+
     .columns-12 {
         padding: 0 15px;
     }
 
     .logo {
         width: auto;
+        top: 50px;
+    }
+
+    .play-button {
+        top: 0;
     }
 
     .intro {
