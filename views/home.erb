@@ -1,27 +1,36 @@
 <html>
 <!DOCTYPE html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="shortcut icon" type="image/png" href="avotrans.ico"/>
+    <link rel="shortcut icon" type="image/png" href="avotrans.ico" />
     <script src="https://use.typekit.net/afv8npa.js"></script>
+    <script src="scripts/jquery.js"></script>
     <script>
-      try {
+    try {
         Typekit.load({
-          async: true
+            async: true
         });
-      } catch (e) {}
+    } catch (e) {}
     </script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-34819223-6', 'auto');
-      ga('send', 'pageview');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-34819223-6', 'auto');
+    ga('send', 'pageview');
     </script>
     <title>Guac Party!</title>
-  </head>
+</head>
 
 <body>
     <div class="nav">
@@ -42,7 +51,6 @@
         <div class="logo">6th Annual Indian Summer Guac Off!</div>
         <a href="#" class="play-button">Watch the timelapse from last year.</a>
         <a href="#" class="caret">tell me more</a>
-
     </div>
     <div class="intro columns-12">
         <h1>The 6th Annual Indian Summer Guac-Off showcases The City's best guacamole.</h1>
@@ -69,8 +77,8 @@
                     <h2 class="red">The Rules</h2>
                 </div>
                 <div class="detail-info">
-                    <p><strong>You must use at least 8 avocados</strong><br>
-                    Bring something! Guacamole, beer or friends. We’ll provide the chips, the prizes, the mariachi band and of course… the coveted Guacamole Glory Trophy.</p>
+                    <p><strong>You must use at least 8 avocados</strong>
+                        <br> Bring something! Guacamole, beer or friends. We’ll provide the chips, the prizes, the mariachi band and of course… the coveted Guacamole Glory Trophy.</p>
                 </div>
             </div>
             <div class="detail">
@@ -189,6 +197,17 @@
             </ul>
         </div>
     </div>
+    <script>
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    </script>
 </body>
 
 </html>
