@@ -518,7 +518,7 @@ label {
     font-size: 24px;
     font-weight: 800;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
 }
 
 input {
@@ -569,10 +569,6 @@ input:-ms-input-placeholder {
     margin-bottom: 30px;
 }
 
-.form-group:last-of-type {
-    display: block;
-}
-
 .form-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -593,7 +589,6 @@ form.form-horizontal {
 
 .form-group:last-of-type {
     display: block;
-    padding-top: 30px;
 }
 
 input.checkbox {
@@ -607,12 +602,29 @@ label.checkbox-inline {
     display: inline-block;
     color: #363513;
     font-size: 24px;
-    font-weight: 800;
     margin-right: 20px;
 }
 
+.arealabel {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
 
-
+textarea {
+    margin: 0 auto;
+    padding: 20px 0 0 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background: #FFFFFF;
+    border: 2px solid #363513;
+    border-radius: 6px;
+    display: block;
+    color: #283304;
+    height: 100px;
+    width: 588px;
+}
 
 /* Weird inbetween phase */
 
@@ -627,6 +639,7 @@ label.checkbox-inline {
         padding: 10px 14px;
     }
 }
+
 
 
 
@@ -665,8 +678,8 @@ label.checkbox-inline {
         padding-bottom: 20px;
     }
 
-    .intro h2{
-         width: auto;
+    .intro h2 {
+        width: auto;
     }
 
     .right {
