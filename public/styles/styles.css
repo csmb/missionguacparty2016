@@ -454,7 +454,7 @@ p.legal {
 
 .sponsors-section {
     background-color: #FCFFEC;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     text-align: center;
 }
 
@@ -487,11 +487,7 @@ p.legal {
     background-image: url("../img/firefly.gif");
 }
 
-.sponsor-fortpoint {
-    background-image: url("../img/fortpoint.png");
-}
-
-.sponsor-tripps {
+.sponsor-americantripps {
     background-image: url("../img/tripps.png");
 }
 
@@ -501,6 +497,46 @@ p.legal {
 
 .sponsor-bff {
     background-image: url("../img/bff.png");
+}
+
+.sponsor-noisepop {
+    background-image: url("../img/noisepop.png");
+}
+
+.sponsor-fdr {
+    background-image: url("../img/fdr.png");
+}
+
+.sponsor-gl {
+    background-image: url("../img/george_and_lennie.png");
+}
+
+.sponsor-woodennickel {
+    background-image: url("../img/woodennickel.jpg");
+}
+
+.sponsor-wesburger {
+    background-image: url("../img/wesburger.png");
+}
+
+.sponsor-pecos {
+    background-image: url("../img/westofpecos.png")
+}
+
+.sponsor-papalote {
+    background-image: url("../img/papalote.png")
+}
+
+.sponsor-rps {
+    background-image: url("../img/rps@2x.png")
+}
+
+.sponsor-tacolicious {
+    background-image: url("../img/tacolicious@2x.png")
+}
+
+.sponsor-4505 {
+    background-image: url("../img/4505.png")
 }
 
 
@@ -626,6 +662,7 @@ textarea {
     width: 588px;
 }
 
+
 /* Weird inbetween phase */
 
 @media only screen and (max-width: 880px) {
@@ -639,6 +676,7 @@ textarea {
         padding: 10px 14px;
     }
 }
+
 
 
 
