@@ -15,5 +15,6 @@ class GuacamoleEnthusiasts
   property :other, Boolean
   property :created_at, DateTime
   property :updated_at, DateTime
+  property :comments, String
 end
 DataMapper.finalize.auto_upgrade!
