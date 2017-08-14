@@ -691,10 +691,6 @@ textarea {
     }
 }
 
-
-
-
-
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 800px) {
@@ -751,7 +747,7 @@ textarea {
     }
 
     .ingredients {
-        width: auto;
+        width: 100%;
     }
 
     .detail-info {
@@ -763,4 +759,9 @@ textarea {
     .form-container {
         margin-bottom: 100px;
     }
+
+    textarea {
+    max-width: 300px;
+}
+
 }
