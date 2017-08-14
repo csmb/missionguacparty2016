@@ -539,6 +539,20 @@ p.legal {
     background-image: url("../img/4505.png")
 }
 
+.success-page {
+    text-align: center;
+}
+
+.success-intro {
+    background-color: #;
+    padding-top: 50px;
+}
+.success-details {
+    background-color: #;
+}
+.success-twitter {
+    background-color: #;
+}
 
 label {
     font-size: 16px;
