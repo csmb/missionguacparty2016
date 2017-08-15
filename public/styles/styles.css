@@ -205,7 +205,7 @@ a.nav-link:hover {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
-    width: 447px;
+    max-width: 447px;
     height: 212px;
     margin: 0px auto -69px;
     position: relative;
@@ -750,10 +750,6 @@ textarea {
         margin: 0 0 20px;
     }
 
-    .ingredients {
-
-    }
-
     .detail-info {
         flex: auto;
         text-align: left;
@@ -765,7 +761,6 @@ textarea {
     }
 
     textarea {
-    max-width: 300px;
-}
-
+      max-width: 300px;
+    }
 }
