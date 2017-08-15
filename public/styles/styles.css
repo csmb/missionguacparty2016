@@ -328,8 +328,11 @@ video {
 }
 
 .time {
-    width: 100%;
     font-weight: 800;
+}
+
+.schedule {
+  width: 100%;
 }
 
 .awards-section {
