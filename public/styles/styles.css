@@ -8,7 +8,7 @@ body {
     font-family: "filson-soft", sans-serif background-color: #fbefe5;
     margin: 0;
     background-color: #F8FFEE;
-    cursor: url("../img/avotrans.ico"), default;
+    cursor: url("../img/avotrans.ico"), default !important;
 }
 
 p,
@@ -403,7 +403,6 @@ p.legal {
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
-    cursor: url("../img/avotrans.ico"), default;
 }
 
 .button--hero {
@@ -454,7 +453,6 @@ p.legal {
 
 .form-section {
     background-color: #FCFFEC margin: 0 auto 0;
-    cursor: url("../img/avotrans.ico"), default;
 }
 
 .sponsors-section {
