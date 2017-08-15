@@ -341,7 +341,7 @@ video {
 
 .awards-section ul {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .awards-section li {
@@ -361,7 +361,7 @@ video {
     display: inline-block;
     background-image: url(../img/tortilla_chip@2x.png);
     width: 128px;
-    height: 110px;
+    height: 125px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
