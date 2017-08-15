@@ -39,9 +39,9 @@ get '/partyon' do
 end
 
 get '/definitelynotthestatspage' do
-  @total_guest_count = GuacamoleEnthusiasts.count
-  @guacamole_count   = GuacamoleEnthusiasts.count(:guac => 't')
-  @beer_count        = GuacamoleEnthusiasts.count(:beer => 't')
-  @friend_count      = GuacamoleEnthusiasts.count(:other => 't')
+  @total_guest_count = GuacamoleEnthusiasts.count - 262
+  @guacamole_count   = GuacamoleEnthusiasts.count(:guac => 't') - 87
+  @beer_count        = GuacamoleEnthusiasts.count(:beer => 't') - 165
+  @friend_count      = GuacamoleEnthusiasts.count(:other => 't') - 142
   erb :stats
 end
