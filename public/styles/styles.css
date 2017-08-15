@@ -552,11 +552,13 @@ p.legal {
     background-color: #;
     padding-top: 50px;
 }
+
 .success-details {
     background-color: #;
 }
-.success-twitter {
-    background-color: #;
+
+.success-details p {
+    color: black;
 }
 
 label {
