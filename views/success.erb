@@ -39,7 +39,7 @@
             <h2>6th Annual Indian Summer Guac-Off!</h2>
             <h4>Date: Saturday, September 9th, 2017.</h4>
             <h4>Time: 1pm - until the last chip is eaten</h4>
-            <h4>Location: <a href="https://goo.gl/maps/U4Y644paVPM2">3340 Folsom St. San Francisco, 94110 &#10154;</a></h4>
+            <h4>Location: <a href="https://goo.gl/maps/MuwPD4ZxReN2" target="_blank">3340 Folsom St. San Francisco, 94110 &#10154;</a></h4>
         </div>
     </div>
     <div class="success-twitter">
@@ -50,27 +50,4 @@
             </div>
         </div>
     </div>
-    <div class="container" id="container">
-        <ul id="scene" class="scene">
-            <li data-depth="9" class="layer"><img id="lime" src="img/lime@2x.png"></li>
-            <li data-depth="7" class="layer"><img id="tomato" src="img/tomato@2x.png"></li>
-            <li data-depth="3" class="layer"><img id="onion" src="img/onion@2x.png"></li>
-            <li data-depth="1" class="layer"><img id="avocado" src="img/avocado@2x.png"></li>
-        </ul>
-    </div>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.parallax.js"></script>
-    <script>
-    $('#scene').parallax();
-
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
-    </script>
 </body>
