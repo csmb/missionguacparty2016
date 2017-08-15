@@ -108,6 +108,10 @@ p {
     padding-bottom: 10px;
 }
 
+li {
+    display: inline-block;
+}
+
 .green {
     color: #92D13E;
 }
@@ -180,7 +184,6 @@ a.nav-link:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 600px;
     display: block;
 }
 
@@ -255,7 +258,6 @@ video {
 }
 
 .intro {
-    height: 600px;
     padding-top: 40px;
 }
 
@@ -352,7 +354,6 @@ video {
 }
 
 .award {
-    color: #4E7B3F;
     font-size: 16px;
     display: inline-block;
 }
@@ -360,19 +361,19 @@ video {
 .award-icon {
     display: inline-block;
     background-image: url(../img/tortilla_chip@2x.png);
-    width: 128px;
-    height: 125px;
+    width: 139px;
+    height: 139px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
 }
 
 p.award-name {
-    padding-top: 20px;
-    color: #4E7B3F;
+    padding-top: 10px;
+    color: #344e2b;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 p.legal {
@@ -689,6 +690,9 @@ textarea {
     a.nav-button {
         padding: 10px 14px;
     }
+    .right {
+        margin-left: 0;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -747,7 +751,7 @@ textarea {
     }
 
     .ingredients {
-        width: 100%;
+
     }
 
     .detail-info {
