@@ -543,6 +543,15 @@ p.legal {
     background-image: url("../img/4505.png")
 }
 
+.sponsor-ladyfalcon {
+    background-image: url("../img/ladyfalcon.png")
+}
+
+.sponsor-pitch {
+    background-image: url("../img/pitchsalon.png");
+    background-size: 75%;
+}
+
 .success-page {
     text-align: center;
 }
