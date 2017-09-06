@@ -552,6 +552,11 @@ p.legal {
     background-size: 75%;
 }
 
+.sponsor-gus {
+    background-image: url("../img/guss.png");
+    background-color: green;
+}
+
 .success-page {
     text-align: center;
 }
