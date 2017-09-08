@@ -467,7 +467,7 @@ p.legal {
 }
 
 .sponsors {
-    max-width: 1000px;
+    max-width: 1150px;
     padding: 0 auto;
     margin: 0 auto;
 }
@@ -554,7 +554,10 @@ p.legal {
 
 .sponsor-gus {
     background-image: url("../img/guss.png");
-    background-color: green;
+}
+
+.sponsor-recurly {
+    background-image: url("../img/recurly.png");
 }
 
 .success-page {
