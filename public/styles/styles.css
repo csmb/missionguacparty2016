@@ -467,7 +467,7 @@ p.legal {
 }
 
 .sponsors {
-    max-width: 1150px;
+    max-width: 960px;
     padding: 0 auto;
     margin: 0 auto;
 }
@@ -558,6 +558,10 @@ p.legal {
 
 .sponsor-recurly {
     background-image: url("../img/recurly.png");
+}
+
+.sponsor-spincity {
+    background-image: url("../img/spincity.png")
 }
 
 .success-page {
