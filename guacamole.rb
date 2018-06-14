@@ -17,6 +17,7 @@ set :public_folder, 'public'
 AVOCADO_COUNT = 8
 
 get '/' do
+#   return redirect "https://docs.google.com/forms/d/1xz60adQHDE-uuIq4Qo_O6rswr0cryBmQ07FCMPcRsV0"
   @avocado_count = AVOCADO_COUNT
   erb :home
 end
