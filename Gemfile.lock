@@ -84,6 +84,7 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rack-ssl-enforcer (0.2.9)
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.7)
@@ -112,6 +113,7 @@ DEPENDENCIES
   pg
   pony
   pry
+  rack-ssl-enforcer
   shotgun
   sinatra
   sinatra-flash
@@ -120,4 +122,4 @@ RUBY VERSION
    ruby 2.2.7p470
 
 BUNDLED WITH
-   1.15.1
+   1.15.3

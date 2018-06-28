@@ -11,6 +11,7 @@ gem 'dm-core'
 gem 'pony'
 gem 'letter_opener'
 gem 'mail'
+gem 'rack-ssl-enforcer'
 
 group :development do
   gem 'shotgun'
