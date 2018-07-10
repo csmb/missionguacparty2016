@@ -21,8 +21,9 @@ h4,
 label,
 input,
 .checkbox-header {
-    font-family: "filson-soft", sans-serif;
+    font-family: AgletSlab-Regular, sans-serif;
 }
+
 
 h1,
 h2,
@@ -30,27 +31,38 @@ h3,
 h4,
 h5 {
     hyphens: none;
+    font-family: HWTArtz, sans-serif;
+
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 52px;
-    color: #363513;
-    font-weight: 600;
+    font-family: WTRGothicOpenShaded;
+    font-size: 60px;
+    color: #282233;
+    letter-spacing: 0.52px;
+    text-align: center;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 52px;
-    color: #92D13E;
-    font-weight: 800;
+    font-family: HWTArtz;
+    font-size: 50px;
+    color: #282233;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 60px;
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 40px;
-    color: #363513;
     font-weight: 400;
+    font-family: AgletSlab-Regular;
+    font-size: 24px;
+    color: #282233;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 36px;
+
+
 }
 
 p,
@@ -119,24 +131,30 @@ li {
 
 
 .nav {
-    background-color: rgba(147, 212, 63, .9);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background: rgba(58,60,40,0.70);
     position: fixed;
     width: 100%;
-    font-family: "filson-soft";
-    font-size: 16px;
+    font-family: "hwt artz";
+    font-size: 30px;
     font-weight: 800;
-    text-transform: uppercase;
-    color: #FCFFEC;
     height: 60px;
     z-index: 999;
     padding: 0 40px;
 }
 
 .nav-headline {
-    display: inline-block;
-    float: left;
-    padding-top: 20px;
+    padding-top: 14px;
+    font-family: HWTArtz;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFAC9;
+    letter-spacing: 0.76px;
+    text-align: center;
+}
+
+
+.nav-links-hidden {
+    display: none;
 }
 
 .nav-links {
@@ -258,20 +276,17 @@ video {
 }
 
 .intro {
-    padding-top: 40px;
+    padding: 50px 0;
+    background-color: #FFFAC9;
 }
 
 .intro h1 {
     text-align: center;
-    font-size: 37px;
 }
 
 .intro h2 {
     display: inline-block;
-    border-radius: 6px;
-    height: 6px;
-    width: 380px;
-    box-shadow: 0 80px 0 0 #92D13E;
+    text-align: center;
     margin-bottom: 88px;
 }
 
@@ -280,13 +295,39 @@ video {
     text-align: center;
 }
 
-.left {
+.whenwhere-left {
     display: inline-block;
+    width: 300px;
+    margin-right: 120px;
 }
 
-.right {
+.whenwhere-right {
     display: inline-block;
     margin-left: 100px;
+}
+
+.when-label {
+    background-color: #F7A26C;
+    height: 220px;
+    width: 220px;
+    border-radius: 300px;
+    padding-top: 11px;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.where-label {
+    background-color: #E3EB9D;
+    height: 220px;
+    width: 220px;
+    border-radius: 300px;
+    padding-top: 11px;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.whenwhere-text{
+    margin-top: -50px;
 }
 
 .details {
@@ -302,25 +343,94 @@ video {
     padding-bottom: 60px;
 }
 
-.detail-name {
-    text-align: right;
-    width: 380px;
-    float: left;
-    flex: 1;
-    margin-right: 30px;
+.detail-left-photo {
+    background-color: #E3EB9D;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
 
-.detail-name h2 {
-    margin: 0;
-    padding: 0;
+.detail-right-photo {
+    background-color: #E3EB9D;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    float: right;
 }
 
-.detail-info {
-    flex: 1;
+.detail-right-text {
+    display: inline-block;
+    padding: 100px 50px;
+    background-color: #282233;
+    float: right;
+    width: 50%;
+    height: 500px;
+    font-family: AgletSlab-Regular;
+    font-size: 20px;
+    color: #FFFAC9;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.detail-right-text:last-child {
+    background-color: #F7A26C;
+}
+
+.detail-left-text {
+    display: inline-block;
+    padding: 100px 50px;
+    background-color: #FFFAC9;
+    width: 50%;
+    height: 500px;
+    font-family: AgletSlab-Regular;
+    font-size: 20px;
+    color: #282233;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.detail-right-text h1 {
+    color: #F7A26C;
     text-align: left;
-    float: left;
-    max-width: 380px;
 }
+
+.detail-left-text h1 {
+    color: #F7A26C;
+    text-align: left;
+}
+
+.detail-right-text:last-child h1 {
+    color: #FFFAC9;
+}
+
+.detail-left-text p {
+    color: #282233;
+    font-size: 20px;
+}
+
+div#detail-photo-1 {
+    background-image: url(../img/mariachiband@2x.jpg);
+}
+
+div#detail-photo-2 {
+    background-image: url(../img/guacs@2x.jpg);
+
+}
+
+div#detail-photo-3 {
+    background-image: url(../img/party@2x.jpg);
+
+}
+
+
 
 .big-p {
     font-size: 22px;
@@ -337,13 +447,13 @@ video {
 }
 
 .awards-section {
-    background-color: #93D43F;
+    background-color: #282233;
     padding: 60px 0;
 }
 
 .awards-section h1 {
     text-align: center;
-    color: #F8FFEE;
+    color: #E4EF7F;
 }
 
 .awards-section ul {
@@ -352,33 +462,15 @@ video {
 }
 
 .awards-section li {
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    width: 300px;
-    height: 200px;
+    width: 600px;
 }
 
 .award {
-    font-size: 16px;
-    display: inline-block;
-}
-
-.award-icon {
-    display: inline-block;
-    background-image: url(../img/tortilla_chip@2x.png);
-    width: 139px;
-    height: 139px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-}
-
-p.award-name {
-    padding-top: 10px;
-    color: #344e2b;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 20px;
+    color: #FBFFDC;
+    font-size: 24px;
+    display: block;
 }
 
 p.legal {
@@ -619,14 +711,14 @@ input::-webkit-input-placeholder {
 }
 
 input:-moz-placeholder {
-    /* Firefox 18- */
+    /* Firefox 18- 
     font-size: 18px;
     font-family: "filson-soft";
     color: #98BB22;
 }
 
 input::-moz-placeholder {
-    /* Firefox 19+ */
+    /* Firefox 19+ 
     font-size: 18px;
     font-family: "filson-soft";
     color: #98BB22;
@@ -790,3 +882,4 @@ textarea {
       max-width: 300px;
     }
 }
+*/*/
