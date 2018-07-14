@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "filson-soft", sans-serif background-color: #fbefe5;
+    font-family: "aglet-slab", sans-serif background-color: #fbefe5;
     margin: 0;
     background-color: #F8FFEE;
     cursor: url("../img/avotrans.ico"), default !important;
@@ -21,7 +21,7 @@ h4,
 label,
 input,
 .checkbox-header {
-    font-family: AgletSlab-Regular, sans-serif;
+    font-family: "aglet-slab", sans-serif;
 }
 
 
@@ -31,12 +31,14 @@ h3,
 h4,
 h5 {
     hyphens: none;
-    font-family: HWTArtz, sans-serif;
+    font-family: “hwt-artz”, sans-serif;
+    font-weight: 700;
 
 }
 
 h1 {
-    font-family: WTRGothicOpenShaded;
+    font-family: "gothic-open-shaded";
+    font-weight: 400;
     font-size: 60px;
     color: #282233;
     letter-spacing: 0.52px;
@@ -45,7 +47,8 @@ h1 {
 }
 
 h2 {
-    font-family: HWTArtz;
+    font-family: “hwt-artz”;
+    font-weight: 700;
     font-size: 50px;
     color: #282233;
     letter-spacing: 0;
@@ -54,8 +57,8 @@ h2 {
 }
 
 h3 {
-    font-weight: 400;
-    font-family: AgletSlab-Regular;
+    font-weight: 700;
+    font-family: “hwt-artz”;
     font-size: 24px;
     color: #282233;
     letter-spacing: 0;
@@ -134,9 +137,9 @@ li {
     background: rgba(58,60,40,0.70);
     position: fixed;
     width: 100%;
-    font-family: "hwt artz";
+    font-family: “hwt-artz”;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     height: 60px;
     z-index: 999;
     padding: 0 40px;
@@ -144,7 +147,8 @@ li {
 
 .nav-headline {
     padding-top: 14px;
-    font-family: HWTArtz;
+    font-family: “hwt-artz”;
+    font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
     color: #FFFAC9;
@@ -373,7 +377,8 @@ video {
     float: right;
     width: 50%;
     height: 500px;
-    font-family: AgletSlab-Regular;
+    font-family: "aglet-slab";
+    font-weight: 400;
     font-size: 20px;
     color: #FFFAC9;
     letter-spacing: 0;
@@ -390,7 +395,8 @@ video {
     background-color: #FFFAC9;
     width: 50%;
     height: 500px;
-    font-family: AgletSlab-Regular;
+    font-family: "aglet-slab";
+    font-weight: 400;
     font-size: 20px;
     color: #282233;
     letter-spacing: 0;
@@ -492,7 +498,7 @@ p.legal {
 .button {
     padding: 24px 40px;
     text-align: center;
-    font-family: "filson-soft";
+    font-family: "hwt-artz";
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
@@ -710,90 +716,6 @@ input::-webkit-input-placeholder {
     font-family: "filson-soft";
 }
 
-input:-moz-placeholder {
-    /* Firefox 18- 
-    font-size: 18px;
-    font-family: "filson-soft";
-    color: #98BB22;
-}
-
-input::-moz-placeholder {
-    /* Firefox 19+ 
-    font-size: 18px;
-    font-family: "filson-soft";
-    color: #98BB22;
-}
-
-input:-ms-input-placeholder {
-    font-size: 18px;
-    color: #98BB22;
-    font-family: "filson-soft";
-}
-
-.form-container h1 {}
-
-.form-group {
-    display: inline-block;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.form-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 38px 0;
-    text-align: center;
-}
-
-.form-container h2 {
-    text-align: left;
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 54px;
-}
-
-form.form-horizontal {
-    padding-top: 20px;
-}
-
-.form-group:last-of-type {
-    display: block;
-}
-
-input.checkbox {
-    height: auto;
-    width: auto;
-    margin-right: 13px;
-}
-
-label.checkbox-inline {
-    text-transform: none;
-    display: inline-block;
-    color: #363513;
-    font-size: 24px;
-    margin-right: 20px;
-}
-
-.arealabel {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 800;
-    text-align: center;
-}
-
-textarea {
-    margin: 0 auto;
-    padding: 20px 0 0 20px;
-    font-family: sans-serif;
-    font-size: 18px;
-    background: #FFFFFF;
-    border: 2px solid #363513;
-    border-radius: 6px;
-    display: block;
-    color: #283304;
-    height: 100px;
-    width: 588px;
-}
 
 
 /* Weird inbetween phase */
