@@ -31,9 +31,8 @@ h3,
 h4,
 h5 {
     hyphens: none;
-    font-family: “hwt-artz”, sans-serif;
+    font-family: "hwt-artz", sans-serif;
     font-weight: 700;
-
 }
 
 h1 {
@@ -47,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-family: “hwt-artz”;
+    font-family: "hwt-artz";
     font-weight: 700;
     font-size: 50px;
     color: #282233;
@@ -58,14 +57,12 @@ h2 {
 
 h3 {
     font-weight: 700;
-    font-family: “hwt-artz”;
+    font-family: "hwt-artz";
     font-size: 24px;
     color: #282233;
     letter-spacing: 0;
     text-align: center;
     line-height: 36px;
-
-
 }
 
 p,
@@ -134,10 +131,10 @@ li {
 
 
 .nav {
-    background: rgba(58,60,40,0.70);
+    background: rgba(58, 60, 40, 0.70);
     position: fixed;
     width: 100%;
-    font-family: “hwt-artz”;
+    font-family: "hwt-artz";
     font-size: 30px;
     font-weight: 700;
     height: 60px;
@@ -147,7 +144,7 @@ li {
 
 .nav-headline {
     padding-top: 14px;
-    font-family: “hwt-artz”;
+    font-family: "hwt-artz";
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
@@ -330,7 +327,7 @@ video {
     margin-bottom: 70px;
 }
 
-.whenwhere-text{
+.whenwhere-text {
     margin-top: -50px;
 }
 
@@ -428,12 +425,10 @@ div#detail-photo-1 {
 
 div#detail-photo-2 {
     background-image: url(../img/guacs@2x.jpg);
-
 }
 
 div#detail-photo-3 {
     background-image: url(../img/party@2x.jpg);
-
 }
 
 
@@ -449,7 +444,7 @@ div#detail-photo-3 {
 }
 
 .schedule {
-  width: 100%;
+    width: 100%;
 }
 
 .awards-section {
@@ -551,7 +546,100 @@ p.legal {
 }
 
 .form-section {
-    background-color: #FCFFEC margin: 0 auto 0;
+    background-color: #F7A26C;
+    padding-top: 100px;
+}
+
+.form-container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+div label input {
+    margin-right: 100px;
+}
+
+.ck-button {
+    margin: 4px;
+    border-radius: 4px;
+    border: 1px solid #FBFFDC;
+    overflow: auto;
+    float: left;
+    box-sizing: border-box;
+}
+
+.ck-button:hover {
+    box-shadow: inset 0 0 0 6px #FBFFDC;
+    border-radius: 4px;
+}
+
+.ck-button:hover label {
+    opacity: 1;
+}
+
+.ck-button label {
+    float: left;
+    width: 200px;
+    opacity: .5;
+    padding-top: 16px;
+}
+
+.ck-button label span {
+    text-align: center;
+    padding: 3px 0px;
+    display: block;
+}
+
+.ck-button label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.ck-button input:checked+span {
+    background-color: #E4EF7F;
+    border: 1px solid #E4EF7F;
+    color: #282233;
+}
+
+.ck-button label > input:checked  {
+    opacity: 1;
+
+}
+
+.checked {
+    opacity: 1
+    color: purple;
+}
+
+.disclaimer {
+    text-align: center;
+}
+
+.talk-to-us {
+    display: block;
+}
+
+.rsvp-circle {
+    font-family: "gothic-open-shaded";
+    font-size: 106px;
+    color: #282233;
+    text-align: center;
+    background-color: #E4EF7F;
+    height: 220px;
+    width: 220px;
+    border-radius: 300px;
+    padding-top: 60px;
+    margin: 0 auto;
 }
 
 .sponsors-section {
@@ -680,13 +768,12 @@ p.legal {
 }
 
 label {
-    font-size: 16px;
-    color: #363513;
-    font-weight: 600;
-    margin-right: 10px;
+    font-size: 24px;
+    color: #282233;
+    font-weight: 700;
     display: block;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 
 .checkbox-header {
@@ -696,25 +783,28 @@ label {
     padding: 20px 0 20px 0;
 }
 
-input {
-    height: 60px;
+.form-input {
+    height: 80px;
     padding-left: 20px;
     font-family: sans-serif;
     font-size: 18px;
-    background: #FFFFFF;
-    border: 2px solid #363513;
-    border-radius: 6px;
-    width: 280px;
-    display: block;
-    color: #283304;
+    background: #FBFFDC;
+    border-radius: 4px;
+    border: none;
+    width: 300px;
+    color: #282233;
     float: left;
+    margin-right: 28px;
 }
 
-input::-webkit-input-placeholder {
+.form-input::-webkit-input-placeholder {
     font-size: 18px;
-    color: #98BB22;
-    font-family: "filson-soft";
+    color: #F7A26C;
+    font-family: "aglet-slab";
 }
+
+
+
 
 
 
@@ -734,6 +824,9 @@ input::-webkit-input-placeholder {
         margin-left: 0;
     }
 }
+
+
+
 
 /* Smartphones (portrait) ----------- */
 
@@ -796,12 +889,11 @@ input::-webkit-input-placeholder {
         float: none;
         max-width: fit-content;
     }
-    .form-container {
-        margin-bottom: 100px;
-    }
 
     textarea {
-      max-width: 300px;
+        max-width: 300px;
     }
 }
-*/*/
+
+*
+/*/

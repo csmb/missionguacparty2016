@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="../img/avotrans.ico" />
     <script src="scripts/jquery.js"></script>
     <script src="https://use.typekit.net/afv8npa.js"></script>
+    <script src="scripts/custom.js"></script>
     <script>
     try { Typekit.load({ async: true }); } catch (e) {}
     </script>
@@ -24,7 +25,14 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-34819223-6', 'auto');
     ga('send', 'pageview');
+
+
+
+
+
+
     </script>
+
     <title>Guac Party!</title>
 </head>
 
@@ -73,7 +81,7 @@
         </div>
     </div>
     <div class="details-section">
-        <div class="detail-left-photo" id="detail-photo-1">Mariachi Band</div>
+        <div class="detail-left-photo" id="detail-photo-1"></div>
         <div class="detail-right-text" id="the-rules">
             <p class="details1">
                 <h1>The Rules</h1> You must use at least 🥑🥑🥑🥑🥑🥑🥑🥑 avocados
@@ -86,8 +94,8 @@
             <p>You and your neighbors ares the judges when it comes to this competition, and you’ll be asked to vote with your eyes, your heart, and of course, your taste buds.
                 <br> The winner to be crowned with the Guacamole Glory Trophy, bragging rights until next Indian Summer, the title of “San Francisco’s Official Guacamole”, and a secret mystery prize!
         </div>
-        <div class="detail-right-photo" id="detail-photo-2">Guacamole</div>
-        <div class="detail-left-photo" id="detail-photo-3">Party</div>
+        <div class="detail-right-photo" id="detail-photo-2"></div>
+        <div class="detail-left-photo" id="detail-photo-3"></div>
         <div class="detail-right-text" id="the-rules">
             <h1>Schedule</h1>
             <div class="schedule-item"><span class="time">1:00 – 2:30</span> Showcase Guacamoles</div>
@@ -114,31 +122,38 @@
         </div>
     </div>
     <div class="form-section" id="form">
-        <div class="form-container columns-12">
+        <div class="form-container">
             <div class="rsvp-circle">RSVP</div>
-            <h2>You're coming, right?<br> Great.</h2>
+            <h2>You're coming, right? Great.</h2>
             <form class="form-horizontal" role="form" method="post">
                 <div class="form-group">
                     <label class="form-label">What's Your Name?</label>
-                    <input class="form-control" type="text" name="name" placeholder="Guacamole Champ" required="">
+                    <input class="form-input" type="text" name="name" placeholder="Guacamole Champ" required="">
                 </div>
                 <div class="form-group">
-                    <label class="form-label">What'sYour Email</label>
-                    <input class="form-control" type="email" name="email" placeholder="guac-lover@gmail.com" required="">
+                    <label class="form-label">What's Your Email</label>
+                    <input class="form-input" type="email" name="email" placeholder="guac-lover@gmail.com" required="">
                 </div>
                 <div class="form-group">
                     <div class="checkbox-header">What are you bringing?</div>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="guac">Guacamole
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="beer">Beer
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="other">Friend(s)
-                    </label>
+                    <div class="ck-button" id="ck-guacamole">
+                        <label>
+                            <input type="checkbox" value="1" class="checkbutton" onclick="styleCheckbox()"><span>Guacamole</span>
+                        </label>
+                    </div>
+                    <div class="ck-button" id="ck-beer">
+                        <label>
+                            <input type="checkbox" value="1"><span>Beer</span>
+                        </label>
+                    </div>
+                    <div class="ck-button" id="ck-friends">
+                        <label>
+                            <input type="checkbox" value="1"><span>Friends</span>
+                        </label>
+                    </div>
                 </div>
-                <div class="form-group">
+                <div class="disclaimer"><p>* It’s totally cool to bring all three.</p></div>
+                <div class="form-group talk-to-us">
                     <label class="form-label arealabel">Talk to us!</label>
                     <textarea class="form-control" name="comments" placeholder="I'm going to give it all I've guac"></textarea>
                 </div>
