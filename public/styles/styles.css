@@ -207,8 +207,8 @@ a.nav-link:hover {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
-    background: rgba(58,60,40,0.70);
-    border: 6px solid #E4EF7F;
+    background: rgba(58, 60, 40, 0.70);
+    border: 4px solid #E4EF7F;
     border-radius: 24px;
     font-family: "hwt-artz";
     font-size: 40px;
@@ -908,6 +908,8 @@ label {
 
 
 
+
+
 /* Weird inbetween phase */
 
 @media only screen and (max-width: 880px) {
@@ -931,29 +933,62 @@ label {
 
 
 
+
+
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 800px) {
-    .nav-headline {
-        display: none;
-    }
 
-    .nav-links {
-        text-align: center;
-        float: none;
+    html,
+    body {
+        margin: 0;
+        /* remove default margin */
+        padding: 0;
+        /* remove default padding */
+        width: 100%;
+        /* take full browser width */
+        height: 100%;
+        /* take full browser height*/
         display: block;
     }
 
+    h1 {
+        font-size: 50px;
+    }
+
+    .logo-container {
+        width: 90%;
+        top: 100px;
+        font-size: 26px;
+        padding: 20px 10px;
+        letter-spacing: 3px;
+    }
+
+    .logo {
+        width: 269px;
+        height: 80px;
+        background-size: contain;
+    }
+
+    .hero-button {
+        float: none;
+    }
+
+    a.button--rsvp {
+        float: none;
+        margin-top: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
     .hero {
-        max-height: 600px
+        max-height: 660px
     }
 
     .columns-12 {
         padding: 0 15px;
-    }
-
-    .play-button {
-        top: 0;
     }
 
     .intro {
@@ -965,32 +1000,65 @@ label {
         width: auto;
     }
 
-    .right {
-        margin: 0;
+    .whenwhere-right {
+        display: inline-block;
+        margin: 50px 0;
     }
 
-    .detail {
+    .detail-left-photo {
+        width: 100%;
+        background-color: #E3EB9D;
         display: block;
-    }
-
-    .detail-name {
-        text-align: left;
-        width: auto;
         float: none;
-        flex: none;
-        margin: 0 0 20px;
     }
 
-    .detail-info {
-        flex: auto;
-        text-align: left;
+    .detail-right-photo {
+        width: 100%;
+        display: block;
         float: none;
-        max-width: fit-content;
+    }
+    .detail-right-text {
+        width: 100%;
+        display: block;
+        float: none;
     }
 
-    textarea {
-        max-width: 300px;
+    .detail-left-text {
+        width: 100%;
+        display: block;
+        float: none;
     }
+
+    li.award {
+        text-align: left;
+    }
+
+    .form-group {
+        text-align: center;
+    }
+
+    .form-group-text-input:last-child {
+        float: none;
+    }
+
+    .checkbox-header {
+        text-align: center;
+    }
+
+    .ck-button {
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+.ck-button label {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 }
 
 *
