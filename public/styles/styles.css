@@ -33,6 +33,8 @@ h5 {
     hyphens: none;
     font-family: "hwt-artz", sans-serif;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -43,6 +45,7 @@ h1 {
     letter-spacing: 0.52px;
     text-align: center;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -56,8 +59,8 @@ h2 {
 }
 
 h3 {
-    font-weight: 700;
-    font-family: "hwt-artz";
+    font-weight: 400;
+    font-family: "aglet-slab";
     font-size: 24px;
     color: #282233;
     letter-spacing: 0;
@@ -124,10 +127,9 @@ li {
     display: inline-block;
 }
 
-.green {
-    color: #92D13E;
+.bold {
+    font-weight: 800;
 }
-
 
 
 .nav {
@@ -194,6 +196,67 @@ a.nav-link:hover {
     transition: .1s;
 }
 
+.logo-container {
+    width: 680px;
+    height: 425px;
+    padding: 30px 40px;
+    font-size: 30px;
+    text-align: center;
+    top: 255px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    background: rgba(58,60,40,0.70);
+    border: 6px solid #E4EF7F;
+    border-radius: 24px;
+    font-family: "hwt-artz";
+    font-size: 40px;
+    color: #F7A26C;
+    letter-spacing: 6.9px;
+}
+
+.logo {
+    margin-top: 12px;
+    background-image: url(../img/guac-off-2018-logo.svg);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 613px;
+    height: 145px;
+}
+
+.logo-date {
+    margin-bottom: 22px;
+}
+
+
+.hero-button {
+    padding: 24px 0;
+    width: 280px;
+    border-radius: 6px;
+    font-family: "hwt-artz";
+    font-size: 32px;
+    color: #282233;
+    letter-spacing: 3px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+}
+
+a.button--compete {
+    background-color: #F7A26C;
+}
+
+a.button--rsvp {
+    background-color: #FFFAC9;
+    float: right;
+}
+
+a.hero-button:hover {
+    text-decoration: none;
+    background-color: #E3EB9D;
+}
+
 .columns-12 {
     max-width: 1200px;
     margin: 0 auto;
@@ -209,25 +272,14 @@ a.nav-link:hover {
 .hero {
     display: block;
     margin: 0 auto;
-    max-height: 700px;
-    background-color: #92D23E;
+    max-height: 900px;
+    background-color: #E3EB9D;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.ingredients {
-    background-image: url(../img/ingredients@2x.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-    max-width: 447px;
-    height: 212px;
-    margin: 0px auto -69px;
-    position: relative;
 }
 
 video {
@@ -243,46 +295,14 @@ video {
     background-repeat: no-repeat;
 }
 
-.logo {
-    background-image: url(../img/logo@2x.png);
-    width: 591px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0px auto 0;
-    top: 130px;
-    height: 300px;
-    position: relative;
-    text-indent: -9999px;
-}
-
-.play-button {
-    background-image: url(../img/avocado@2x.png);
-    width: 150px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0px auto 0;
-    top: 70px;
-    height: 250px;
-    text-indent: -9999px;
-    position: relative;
-    display: block;
-}
-
-.play-button:hover {
-    width: 160px;
-    transition: all;
-    transition: .1s;
-}
-
 .intro {
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #FFFAC9;
 }
 
 .intro h1 {
     text-align: center;
+    padding-top: 40px;
 }
 
 .intro h2 {
@@ -329,6 +349,12 @@ video {
 
 .whenwhere-text {
     margin-top: -50px;
+}
+
+.whenwhere-text a:hover {
+    text-decoration: underline;
+    border-bottom: 10px solid #E3EB9D;
+    text-decoration: none;
 }
 
 .details {
@@ -421,17 +447,27 @@ video {
 
 div#detail-photo-1 {
     background-image: url(../img/mariachiband@2x.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 div#detail-photo-2 {
     background-image: url(../img/guacs@2x.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 div#detail-photo-3 {
     background-image: url(../img/party@2x.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-
 
 .big-p {
     font-size: 22px;
@@ -439,12 +475,17 @@ div#detail-photo-3 {
     padding-bottom: 20px;
 }
 
-.time {
-    font-weight: 800;
+div#the-schedule {
+    color: #282233;
 }
 
-.schedule {
-    width: 100%;
+.schedule-item {
+    margin-bottom: 30px;
+}
+
+.time {
+    font-weight: 800;
+    margin-right: 20px;
 }
 
 .awards-section {
@@ -472,6 +513,11 @@ div#detail-photo-3 {
     color: #FBFFDC;
     font-size: 24px;
     display: block;
+}
+
+li.award {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 p.legal {
@@ -528,26 +574,30 @@ p.legal {
 }
 
 .button--submit {
-    font-size: 24px;
+    font-size: 32px;
     color: #fff;
-    height: 70px;
+    height: 100px;
     padding-top: 18px;
-    background: #92D23E;
-    border-radius: 100px;
+    background: #282233;
     border: none;
+    width: 100%;
+    letter-spacing: 3px;
 }
 
 .button--submit:hover {
-    background-color: #82C031;
+    color: #282233;
+    background-color: #E4EF7F;
 }
 
 .button--submit:active {
-    background-color: #82C031;
+    color: #282233;
+    background-color: #E4EF7F;
 }
 
 .form-section {
     background-color: #F7A26C;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .form-container {
@@ -558,11 +608,19 @@ p.legal {
 
 .form-container h2 {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .form-group {
-    display: inline-block;
     margin-bottom: 50px;
+}
+
+.form-group-text-input {
+    display: inline-block;
+}
+
+.form-group-text-input:last-child {
+    float: right;
 }
 
 div label input {
@@ -571,16 +629,17 @@ div label input {
 
 .ck-button {
     margin: 4px;
-    border-radius: 4px;
-    border: 1px solid #FBFFDC;
     overflow: auto;
     float: left;
-    box-sizing: border-box;
+    padding-right: 18px;
 }
 
-.ck-button:hover {
+div#ck-friends {
+    padding-right: 0;
+}
+
+.ck-button label span:hover {
     box-shadow: inset 0 0 0 6px #FBFFDC;
-    border-radius: 4px;
 }
 
 .ck-button:hover label {
@@ -590,14 +649,17 @@ div label input {
 .ck-button label {
     float: left;
     width: 200px;
-    opacity: .5;
-    padding-top: 16px;
+    margin-bottom: 0;
+    height: 80px;
 }
 
 .ck-button label span {
     text-align: center;
     padding: 3px 0px;
     display: block;
+    border: 2px solid #fffac9;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 .ck-button label input {
@@ -609,25 +671,23 @@ div label input {
     background-color: #E4EF7F;
     border: 1px solid #E4EF7F;
     color: #282233;
+    height: 72px;
 }
 
-.ck-button label > input:checked  {
+.ck-button label>input:checked {
     opacity: 1;
-
+    height: 81px;
 }
 
 .checked {
-    opacity: 1
-    color: purple;
+    opacity: 1 color: purple;
 }
 
 .disclaimer {
     text-align: center;
+    color: #282233;
 }
 
-.talk-to-us {
-    display: block;
-}
 
 .rsvp-circle {
     font-family: "gothic-open-shaded";
@@ -639,8 +699,44 @@ div label input {
     width: 220px;
     border-radius: 300px;
     padding-top: 60px;
-    margin: 0 auto;
+    margin: 0 auto 70px;
 }
+
+.celebrity-judges {
+    background-color: #E3EB9D;
+    padding: 100px 0;
+}
+
+.judge {
+    display: inline-block;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.judge-name {
+    text-align: center;
+    color: #282233;
+    font-size: 30px;
+    padding-top: 30px;
+    font-family: "aglet-slab";
+    font-weight: 700;
+}
+
+.celebrity-judges .judge:last-child {
+    margin-right: 0;
+}
+
+.judge-photo {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+#placeholder-judge {
+    background-image: url("../img/placeholder-judge.jpg ");
+    background-size: cover;
+}
+
 
 .sponsors-section {
     background-color: #FCFFEC;
@@ -774,13 +870,15 @@ label {
     display: block;
     text-align: left;
     margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .checkbox-header {
     font-size: 24px;
     font-weight: 800;
-    text-align: center;
+    text-align: left;
     padding: 20px 0 20px 0;
+    text-transform: uppercase;
 }
 
 .form-input {
@@ -791,10 +889,9 @@ label {
     background: #FBFFDC;
     border-radius: 4px;
     border: none;
-    width: 300px;
+    width: 315px;
     color: #282233;
     float: left;
-    margin-right: 28px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -802,6 +899,9 @@ label {
     color: #F7A26C;
     font-family: "aglet-slab";
 }
+
+
+
 
 
 
@@ -828,6 +928,9 @@ label {
 
 
 
+
+
+
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 800px) {
@@ -847,11 +950,6 @@ label {
 
     .columns-12 {
         padding: 0 15px;
-    }
-
-    .logo {
-        width: auto;
-        top: 50px;
     }
 
     .play-button {
