@@ -290,7 +290,7 @@ video {
     min-width: 100%;
     transform: translateX(-50%);
     mix-blend-mode: multiply;
-    background-image: url(../img/hero_video@2x.jpg);
+    background-image: url(../img/mobile_hero.jpg);
     background-size: 110%;
     background-repeat: no-repeat;
 }
@@ -455,7 +455,7 @@ video {
 }
 
 div#detail-photo-1 {
-    background-image: url(../img/mariachiband@2x.jpg);
+    background-image: url(../img/guac_party.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
