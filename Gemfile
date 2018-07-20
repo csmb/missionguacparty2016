@@ -12,6 +12,7 @@ gem 'pony'
 gem 'letter_opener'
 gem 'mail'
 gem 'rack-ssl-enforcer'
+gem 'rack-protection', '~> 1.5.5'
 
 group :development do
   gem 'shotgun'
