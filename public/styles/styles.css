@@ -1016,6 +1016,7 @@ label {
         width: 100%;
         background-color: #E3EB9D;
         display: block;
+        height: 300px;
         float: none;
     }
 
@@ -1023,6 +1024,7 @@ label {
         width: 100%;
         display: block;
         float: none;
+        height: 300px;
     }
 
     .detail-right-text {
