@@ -427,7 +427,7 @@ video {
 }
 
 .detail-right-text h1 {
-    color: #F7A26C;
+    color: #FFFAC9;
     text-align: left;
 }
 
@@ -486,6 +486,7 @@ div#detail-photo-3 {
 
 div#the-schedule {
     color: #282233;
+    background-color: #F7A26C;
 }
 
 .schedule-item {
@@ -739,11 +740,23 @@ div#ck-friends {
     height: 300px;
     width: 300px;
     border-radius: 100%;
+    background-size: cover;
 }
 
 #placeholder-judge {
     background-image: url("../img/placeholder-judge.jpg ");
-    background-size: cover;
+}
+
+#judge-emperor {
+    background-image: url("../img/emperor-norton.jpg");
+}
+
+#judge-guy {
+    background-image: url("../img/guy.jpg");
+}
+
+#judge-drake {
+    background-image: url("../img/drake.jpg");
 }
 
 
@@ -965,7 +978,12 @@ label {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size:  40px;
         line-height: 45px;
     }
 
@@ -1051,6 +1069,7 @@ label {
 
     li.award {
         text-align: left;
+        margin-bottom: 5px;;
     }
 
     .form-group {
