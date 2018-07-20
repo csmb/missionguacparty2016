@@ -766,6 +766,10 @@ div#ck-friends {
     text-align: center;
 }
 
+.sponsors-section:last-of-type {
+    padding-bottom: 100px;
+    }
+
 .sponsors-section h1 {
     margin-bottom: 80px;
 }
