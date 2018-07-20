@@ -71,7 +71,7 @@ h3 {
 p,
 ol {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 30px;
     margin: 0;
     font-weight: 400;
     color: #fbf3ed;
@@ -81,7 +81,6 @@ ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-    text-align: center;
 }
 
 ol {
@@ -120,11 +119,12 @@ a:hover {
 }
 
 p {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 li {
     display: inline-block;
+    padding-bottom: 15px;
 }
 
 .bold {
@@ -445,6 +445,15 @@ video {
     font-size: 20px;
 }
 
+.detail-max-left {
+    max-width: 500px;
+    float: right;
+}
+
+.detail-max-right {
+    max-width: 500px;
+}
+
 div#detail-photo-1 {
     background-image: url(../img/mariachiband@2x.jpg);
     -webkit-background-size: cover;
@@ -506,7 +515,7 @@ div#the-schedule {
 .awards-section li {
     text-align: left;
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
 }
 
 .award {
@@ -962,11 +971,11 @@ label {
         font-size: 26px;
         padding: 20px 10px;
         letter-spacing: 3px;
+        height: auto;
     }
 
     .logo {
-        width: 269px;
-        height: 80px;
+        width: 100%;
         background-size: contain;
     }
 
