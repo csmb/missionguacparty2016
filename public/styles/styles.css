@@ -934,36 +934,6 @@ label {
 
 
 
-
-
-
-/* Weird inbetween phase */
-
-@media only screen and (max-width: 880px) {
-    .nav-headline {
-        font-size: 14px;
-    }
-    .nav-link {
-        margin-right: 4px;
-    }
-    a.nav-button {
-        padding: 10px 14px;
-    }
-    .right {
-        margin-left: 0;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 800px) {
@@ -1003,6 +973,8 @@ label {
     .logo {
         width: 100%;
         background-size: contain;
+        height: 90px;
+        background-position: 50% 0;
     }
 
     .hero-button {
@@ -1121,6 +1093,7 @@ label {
     }
 
 }
+
 
 *
 /*/
