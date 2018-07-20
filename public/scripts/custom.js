@@ -16,7 +16,7 @@ let floatyBubbles = {
 		opacity: 1,						// opacity of bodies
 		collisions: true,				// do bodies collide or pass through
 		scrollVelocity: 0.025,			// scaling of scroll delta to velocity applied to bodies
-		pixelsPerBody: 50000,			// viewport pixels required for each body added
+		pixelsPerBody: 100000,			// viewport pixels required for each body added
 
 		// colors to cycle through to fill bodies
 		colors: ['#E3EB9D', '#FFFAC9', '#F7A26C']
