@@ -919,6 +919,7 @@ label {
 
 
 
+
 /* Weird inbetween phase */
 
 @media only screen and (max-width: 880px) {
@@ -934,7 +935,12 @@ label {
     .right {
         margin-left: 0;
     }
+
+    video {
+        display: none;
+    }
 }
+
 
 
 
@@ -963,6 +969,7 @@ label {
 
     h1 {
         font-size: 50px;
+        line-height: 45px;
     }
 
     .logo-container {
@@ -1026,15 +1033,22 @@ label {
         display: block;
         float: none;
     }
+
     .detail-right-text {
         width: 100%;
         display: block;
         float: none;
+        height: auto;
     }
 
     .detail-left-text {
         width: 100%;
         display: block;
+        float: none;
+        height: auto;
+    }
+
+    .detail-max-left {
         float: none;
     }
 
@@ -1055,18 +1069,36 @@ label {
     }
 
     .ck-button {
-    margin: 0 auto;
-    float: none;
-    width: auto;
-    padding: 0;
-}
+        margin: 0 auto;
+        float: none;
+        width: auto;
+        padding: 0;
+    }
 
-.ck-button label {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-}
+    .ck-button label {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
 
+    .whenwhere-left, .whenwhere-right {
+        width: 90%;
+        margin: 0 0 50px 0;
+    }
+
+    .button--submit {
+        width: 90%;
+    }
+
+    .judge {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .judge-photo {
+        margin: 0 auto;
+    }
 
 }
 
