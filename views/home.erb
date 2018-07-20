@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="shortcut icon" type="image/png" href="../img/avotrans.ico" />
     <script src="scripts/jquery.js"></script>
-    <script src="https://use.typekit.net/afv8npa.js"></script>
+    <script src="https://use.typekit.net/afv8npa.js"></script>    
+    <script src="https://cdn.rawgit.com/liabru/matter-js/306dc024/build/matter.min.js"></script>
+    <script src="https://cdn.rawgit.com/liabru/matter-wrap/43be2639/build/matter-wrap.min.js"></script>
     <script src="scripts/custom.js"></script>
     <script>
     try { Typekit.load({ async: true }); } catch (e) {}
@@ -28,7 +30,6 @@
     </script>
     <title>Guac Party!</title>
 </head>
-
 <body>
     <div class="nav">
         <div class="columns-12">
@@ -87,9 +88,9 @@
                     <h1>The Rules</h1>
                     <ul>
                         <li>You must use at least 🥑🥑🥑🥑🥑🥑🥑🥑 avocados</li>
-                    <li>Bring something! Guacamole, beer or friends.</li>
-                    <li>We’ll provide the chips, the prizes, the mariachi band and of course… The coveted Guacamole Glory Trophy.</li>
-                </ul>
+                        <li>Bring something! Guacamole, beer or friends.</li>
+                        <li>We’ll provide the chips, the prizes, the mariachi band and of course… The coveted Guacamole Glory Trophy.</li>
+                    </ul>
                 </p>
             </div>
         </div>
@@ -111,7 +112,6 @@
             </div>
         </div>
         <div class="detail-left-photo" id="detail-photo-3"></div>
-        
     </div>
     <div class="awards-section">
         <div class="columns-12">
@@ -238,6 +238,9 @@
             </div>
         </div>
     </div>
+
+<canvas id="bg"></canvas>
+    
     <script>
     $('a[href^="#"]').on('click', function(event) {
         var target = $(this.getAttribute('href'));
