@@ -9,14 +9,14 @@ let floatyBubbles = {
 	// customizable options (passed into init function)
     options: {
 		canvasSelector: '',				// to find <canvas> in DOM to draw on
-		radiusRange: [25, 50],			// random range of body radii
+		radiusRange: [15, 75],			// random range of body radii
 		xVarianceRange: [-0.75, 0.75],	// random range of x velocity scaling on bodies
 		yVarianceRange: [0.75, 1.5],		// random range of y velocity scaling on bodies
 		airFriction: 0.01,				// air friction of bodies
 		opacity: 1,						// opacity of bodies
 		collisions: true,				// do bodies collide or pass through
 		scrollVelocity: 0.0125,			// scaling of scroll delta to velocity applied to bodies
-		pixelsPerBody: 200000,			// viewport pixels required for each body added
+		pixelsPerBody: 100000,			// viewport pixels required for each body added
 
 		// colors to cycle through to fill bodies
 		colors: ['#E3EB9D', '#FFFAC9', '#F7A26C']
@@ -51,7 +51,7 @@ let floatyBubbles = {
 	
 		// engine
 		this.engine = Matter.Engine.create();
-		this.engine.world.gravity.y = 0;
+		this.engine.world.gravity.y = 0.7;
 	
 		// render
 		this.render = Matter.Render.create({

@@ -553,6 +553,7 @@ p.legal {
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
+    display: inline-block;
 }
 
 .button--hero {
@@ -873,20 +874,55 @@ div#ck-friends {
 }
 
 .success-page {
-    text-align: center;
+    background-color: #E3EB9D;
 }
 
 .success-intro {
-    background-color: #;
-    padding-top: 50px;
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
-.success-details {
-    background-color: #;
+.success-intro-left {
+    display: inline-block;
+    float: left;
+    max-width: 45%;
+    margin-right: 50px;
 }
 
-.success-details p {
-    color: black;
+.success-intro-left h1 {
+    text-align: right;
+}
+
+.success-body {
+    font-family: "aglet-slab";
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    max-width: 33%;
+    float: left;
+}
+
+.success-share-calendar {
+    clear: both;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.button.button-calendar {
+    background-color: #F7A26C;
+    color: #FFFAC9;
+    width: 400px;
+    font-size: 32px;
+    margin-right: 30px;
+}
+
+.button.button-share {
+    background-color: #FFFAC9;
+    color: #F7A26C;
+    width: 400px;
+    font-size: 32px;
 }
 
 label {
