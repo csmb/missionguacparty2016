@@ -1215,17 +1215,16 @@ label {
     }
 
     .ck-button label>input:checked {
-        height: 44px;
+        height: 50px;
     }
 
     .ck-button input:checked+span {
-        height: 52px;
+        height: 50px;
+        padding: 13px;
     }
     .disclaimer {
         padding: 10px 0 0 0;
     }
-
-
     canvas {
         position: fixed;
         z-index: 1;
