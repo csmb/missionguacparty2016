@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'pg'
 require 'rack-ssl-enforcer'
+require 'gibbon'
 
 require_relative './email'
 require_relative './models'
@@ -29,14 +30,25 @@ end
 post '/' do
   enthusiast = GuacamoleEnthusiasts.new(params)
   if enthusiast.save
-    Pony.mail to: enthusiast.email,
-              from: "Guac Party <missionguacparty@gmail.com>",
-              subject: "Congratulations, you hit guac bottom.",
-              html_body: welcome_email.result(binding)
+    gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_API_KEY'])
+    merge_fields = { GUAC: (params[:guac].nil? ? "" : "true"),
+                     BEER: (params[:beer].nil? ? "" : "true"),
+                     FRIENDS: (params[:other].nil? ? "" : "true")
+                   }.reject { |_,v| v.empty? }
+
+    gibbon.lists(ENV['WELCOME_LIST_ID']).members.create(body:
+      { email_address: params[:email],
+        status: "subscribed",
+        merge_fields: merge_fields
+      }
+    )
     redirect '/partyon'
   else
     redirect '/'
   end
+rescue Gibbon::MailChimpError => e
+  print "Oh no, an error occured: #{e}."
+  redirect '/partyon'
 end
 
 get '/partyon' do

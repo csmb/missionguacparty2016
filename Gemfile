@@ -11,6 +11,7 @@ gem 'dm-core'
 gem 'pony'
 gem 'letter_opener'
 gem 'mail'
+gem 'gibbon'
 gem 'rack-ssl-enforcer'
 gem 'rack-protection', '~> 1.5.5'
 
