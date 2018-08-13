@@ -3,10 +3,7 @@ require 'pg'
 require 'rack-ssl-enforcer'
 require 'gibbon'
 
-require_relative './email'
 require_relative './models'
-
-welcome_email = ERB.new(IO.read('./views/emails/welcome.html'))
 
 configure :production do
   use Rack::SslEnforcer
