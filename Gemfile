@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.2.7"
+ruby "2.5.1"
 
 gem 'sinatra'
 gem 'sinatra-flash'
@@ -8,10 +8,11 @@ gem 'dm-postgres-adapter'
 gem 'pg'
 gem 'dm-timestamps'
 gem 'dm-core'
-gem 'pony'
 gem 'letter_opener'
 gem 'mail'
+gem 'gibbon'
 gem 'rack-ssl-enforcer'
+gem 'rack-protection', '~> 1.5.5'
 
 group :development do
   gem 'shotgun'

@@ -60,8 +60,13 @@ GEM
       data_objects (= 0.10.17)
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
     fastercsv (1.5.5)
-    json (1.8.3)
+    gibbon (3.2.0)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
+    json (1.8.6)
     json_pure (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -74,15 +79,14 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     multi_json (1.12.1)
+    multipart-post (2.0.0)
     pg (0.18.4)
-    pony (1.11)
-      mail (>= 2.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rack (1.6.4)
-    rack-protection (1.5.3)
+    rack (1.6.10)
+    rack-protection (1.5.5)
       rack
     rack-ssl-enforcer (0.2.9)
     shotgun (0.9.1)
@@ -108,18 +112,19 @@ DEPENDENCIES
   dm-postgres-adapter
   dm-sqlite-adapter
   dm-timestamps
+  gibbon
   letter_opener
   mail
   pg
-  pony
   pry
+  rack-protection (~> 1.5.5)
   rack-ssl-enforcer
   shotgun
   sinatra
   sinatra-flash
 
 RUBY VERSION
-   ruby 2.2.7p470
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.15.3
+   1.16.3
