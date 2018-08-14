@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="shortcut icon" type="image/png" href="../img/avotrans.ico" />
     <script src="https://use.typekit.net/afv8npa.js"></script>
+    <script src="https://cdn.rawgit.com/liabru/matter-js/306dc024/build/matter.min.js"></script>
+    <script src="https://cdn.rawgit.com/liabru/matter-wrap/43be2639/build/matter-wrap.min.js"></script>
+    <script src="scripts/custom.js"></script>
     <script>
     try {
         Typekit.load({
@@ -25,36 +28,23 @@
         }
     }(document, 'script', 'twitter-wjs');
     </script>
-    <title>Guac Party!</title>
+    <title>Indian Summer Guac Off</title>
 </head>
 
 <body class="success-page">
     <div class="success-intro">
-        <div class="columns-12">
-            <h1>We're so glad you're coming to the Guac Party!</h1>
+        <div class="success-intro-left">
+            <h1>You just made an excellent decision</h1>
+        </div>
+        <div class="success-body">
+            Invite your friends, lovers, pets, and cousins, and maybe even that cute guy from the apartment across the hall.
+            <br>
+            <br>We'll send you a reminder email a day or two before the competition, but you should probably add September 8th to your calendar now.
         </div>
     </div>
-    <div class="success-details">
-        <div class="columns-12">
-            <p>
-               Invite your friends, lovers, pets, and cousins, and maybe even that cute guy from the apartment
-               across the hall. We'll send you a reminder email a day or two before the competition, but you should
-               probably add September 8th to your calendar now.
-             </p>
-            <h4>Saturday, September 8th, 2018</h4>
-            <h4>1pm - until the last chip is eaten</h4>
-            <h4><a href="https://goo.gl/maps/MuwPD4ZxReN2" target="_blank">3340 Folsom St. San Francisco, 94110 &#10154;</a></h4>
-        </div>
+    <div class="success-share-calendar columns-12">
+        <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnR1b21iZzc2cmhqb3Q3aDFvNmo2azEzYTEgam9zaC5yLndpbGxpYW1zQG0&tmsrc=josh.r.williams%40gmail.com" class="button button-calendar">Add to Calendar</a>
+        <a href="https://twitter.com/intent/tweet?hashtags=guacparty&original_referer=https%3A%2F%2Fwww.guacamole.expert%2Fpartyon&ref_src=twsrc%5Etfw&text=I%27m%20going%20to%20a%20guacamole%20party...&tw_p=tweetbutton&url=http%3A%2F%2Fguacamole.expert" class="button button-share">Share on Twitter</a>
     </div>
-    <div class="success-details">
-        <div class="columns-12">
-             <p>
-                Feel free to share this on Twitter, because "I'm going to a guacamole party..."
-                seems like the start of a really good tweet.
-              </p>
-            <div class="share">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.guacamole.expert" data-text="I'm going to a guacamole party..." data-hashtags="guacparty" data-count="none" data-size="large">Tweet</a>
-            </div>
-        </div>
-    </div>
+    <canvas id="bg"></canvas>
 </body>
