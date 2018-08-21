@@ -38,13 +38,13 @@ post '/' do
         merge_fields: merge_fields
       }
     )
-    redirect '/partyon'
+    erb :success
   else
-    redirect '/'
+    erb :home
   end
 rescue Gibbon::MailChimpError => e
   print "Oh no, an error occured: #{e}."
-  redirect '/partyon'
+  erb :success
 end
 
 get '/partyon' do
