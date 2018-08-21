@@ -749,6 +749,14 @@ div#ck-friends {
   background-image: url("../img/e40.jpg");
 }
 
+#judge-karl {
+  background-image: url("../img/judge-karl.jpg")
+}
+
+#judge-comet {
+  background-image: url("../img/judge-comet.jpg")
+}
+
 .sponsors-section {
   background-color: #FCFFEC;
   padding: 100px 0 0 0;
@@ -1063,6 +1071,9 @@ canvas {
     margin-bottom: 5px;
     ;
   }
+  .time {
+    display: block;
+}
   .whenwhere-left, .whenwhere-right {
     width: 90%;
     margin: 0 0 50px 0;
