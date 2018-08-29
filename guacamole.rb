@@ -52,12 +52,22 @@ get '/partyon' do
 end
 
 get '/definitelynotthestatspage' do
-  registration_start = DateTime.new(2018, 8, 1)
   now = DateTime.now
+  registration_open_2018 = DateTime.new(2018, 8, 1)
+  registration_open_2017 = DateTime.new(2017, 8, 1)
+  registration_closed_2017 = now - 365
 
-  @total_guest_count = GuacamoleEnthusiasts.all(created_at: registration_start..now).count
-  @guacamole_count   = GuacamoleEnthusiasts.all(created_at: registration_start..now, guac: 't').count
-  @beer_count        = GuacamoleEnthusiasts.all(created_at: registration_start..now, beer: 't').count
-  @friend_count      = GuacamoleEnthusiasts.all(created_at: registration_start..now, other: 't').count
+  @guest_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now).count.to_i
+  @guest_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017).count.to_i
+
+  @guacamole_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, guac: 't').count.to_i
+  @guacamole_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, guac: 't').count.to_i
+
+  @beer_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, beer: 't').count.to_i
+  @beer_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, beer: 't').count.to_i
+
+  @friends_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, other: 't').count.to_i
+  @friends_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, other: 't').count.to_i
+
   erb :stats
 end
