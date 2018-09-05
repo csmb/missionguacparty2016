@@ -57,17 +57,17 @@ get '/definitelynotthestatspage' do
   registration_open_2017 = DateTime.new(2017, 8, 1)
   registration_closed_2017 = now - 365
 
-  @guest_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now).count.to_i
-  @guest_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017).count.to_i
+  @guest_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now).count
+  @guest_trending = (@guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017).count)
 
-  @guacamole_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, guac: 't').count.to_i
-  @guacamole_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, guac: 't').count.to_i
+  @guacamole_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, guac: 't').count
+  @guacamole_trending = (@guacamole_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, guac: 't').count)
 
-  @beer_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, beer: 't').count.to_i
-  @beer_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, beer: 't').count.to_i
+  @beer_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, beer: 't').count
+  @beer_trending = (@beer_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, beer: 't').count)
 
-  @friends_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, other: 't').count.to_i
-  @friends_trending = @guest_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, other: 't').count.to_i
+  @friends_count_2018 = GuacamoleEnthusiasts.all(created_at: registration_open_2018..now, other: 't').count
+  @friends_trending = (@friends_count_2018 - GuacamoleEnthusiasts.all(created_at: registration_open_2017..registration_closed_2017, other: 't').count)
 
   erb :stats
 end
