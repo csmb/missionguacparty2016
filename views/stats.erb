@@ -1,48 +1,41 @@
 <html>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../img/avotrans.ico"/>
+    <link rel="shortcut icon" type="image/png" href="../img/avotrans.ico" />
     <script src="https://use.typekit.net/afv8npa.js"></script>
     <script>
-      try {
-        Typekit.load({async: true});
-      } catch (e) {}
+    try {
+        Typekit.load({ async: true });
+    } catch (e) {}
     </script>
     <title>Guac Party!</title>
-  </head>
+</head>
 
-  <body>
-    <div class="info-section success">
-      <div class="info">
-        <div class="info-intro">
-          <h2><%= @guest_count_2018 %>
+<body>
+    <div class="stats-new">
+        <h2><%= @guest_count_2018 %>
             folks have RSVP'd</h2>
-          <h2><%= @guacamole_count_2018 %>
+        <h2><%= @guacamole_count_2018 %>
             are bringing guacamole</h2>
-          <h2><%= @beer_count_2018 %>
+        <h2><%= @beer_count_2018 %>
             will bring beer</h2>
-          <h2><%= @friends_count_2018 %>
+        <h2><%= @friends_count_2018 %>
             have indicated they'll bring friends</h2>
-        </div>
-      </div>
     </div>
-
-    <div class="info-section success">
-      <div class="info">
-        <div class="info-intro">
-          <h2><%= @guest_trending %>
+    <div class="stats-compared">
+        <h2><%= @guest_trending %>
             more guests RSVP'd than this time last year</h2>
-          <h2><%= @guacamole_trending %>
+        <h2><%= @guacamole_trending %>
             more guacamoles than this time last year</h2>
-          <h2><%= @beer_trending %>
+        <h2><%= @beer_trending %>
             more beers than this time last year</h2>
-          <h2><%= @friends_trending %>
+        <h2><%= @friends_trending %>
             more friends than this time last year</h2>
-        </div>
-      </div>
     </div>
-  </body>
+    </div>
+</body>
+
 </html>
