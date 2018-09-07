@@ -772,7 +772,6 @@ div#ck-friends {
 }
 
 .sponsors {
-  max-width: 960px;
   padding: 0 auto;
   margin: 0 auto;
 }
@@ -784,8 +783,17 @@ div#ck-friends {
   background-repeat: no-repeat;
   text-indent: -9999px;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   background-position: center;
+}
+
+.sponsor-littlechihuahua {
+  background-image: url("../img/little_chihuahua.png");
+}
+
+.sponsor-cousin {
+  background-image: url("../img/3rd-cousin.jpeg");
 }
 
 .sponsor-dsf {
@@ -794,6 +802,10 @@ div#ck-friends {
 
 .sponsor-firefly {
   background-image: url("../img/firefly.gif");
+}
+
+.sponsor-eatamericana {
+  background-image: url("../img/eatamericana.webp");
 }
 
 .sponsor-americantripps {
@@ -865,8 +877,45 @@ div#ck-friends {
   background-image: url("../img/recurly.png");
 }
 
-s .sponsor-spincity {
+.sponsor-spincity {
   background-image: url("../img/spincity.png")
+}
+
+.sponsor-sf-neon {
+    background-image: url("../img/sf-neon.jpg")
+}
+.sponsor-emmys {
+    background-image: url("../img/emmys.png")
+}
+.sponsor-emperor-norton {
+    background-image: url("../img/emperor-nortons-boozeland.jpg")
+}
+.sponsor-odm {
+    background-image: url("../img/odm.jpeg")
+}
+.sponsor-popup-mag {
+    background-image: url("../img/popup.svg")
+}
+.sponsor-beach-blanket {
+    background-image: url("../img/beachblanketlogo.svg")
+}
+.sponsor-monks-kettle {
+    background-image: url("../img/monks-kettle.png")
+}
+.sponsor-pentacle-coffee {
+    background-image: url("../img/pentacle-coffee.webp")
+}
+.sponsor-emporium {
+    background-image: url("../img/emporium.png")
+}
+.sponsor-amos-goldbaum {
+    background-image: url("../img/amos-goldbaum.jpeg")
+}
+.sponsor-fleet-wood {
+    background-image: url("../img/fleetwood.jpg")
+}
+.sponsor-imperfect-produce {
+    background-image: url("../img/imprerfect-produce.jpg")
 }
 
 .success-page {
