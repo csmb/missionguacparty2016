@@ -1,2 +1,2 @@
 require "./guacamole.rb"
-Dir.glob('spec/*.rake').each { |r| load r}
+Dir.glob('spec/*.rake').each { |r| load r }
