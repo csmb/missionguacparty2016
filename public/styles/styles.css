@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: "aglet-slab", sans-serif background-color: #fbefe5;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
-    background-color: #F8FFEE;
     cursor: url("../img/avotrans.ico"), default !important;
+    background: linear-gradient(180deg, #ECA465 0.38%, #FFBD4E 20.69%, #FF8133 37.88%, #B26A52 57.15%, #7F514A 79.55%, #E94124 100.38%);
+    color: white;
 }
 
 p,
@@ -21,7 +22,7 @@ h4,
 label,
 input,
 .checkbox-header {
-    font-family: "aglet-slab", sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1,
@@ -30,40 +31,32 @@ h3,
 h4,
 h5 {
     hyphens: none;
-    font-family: "hwt-artz", sans-serif;
-    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-family: "gothic-open-shaded";
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 900;
     font-size: 60px;
-    color: #282233;
     letter-spacing: 0.52px;
-    text-align: center;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
 h2 {
-    font-family: "hwt-artz";
+    font-size: 20px;
     font-weight: 700;
-    font-size: 50px;
-    color: #282233;
     letter-spacing: 0;
-    text-align: left;
     line-height: 60px;
 }
 
 h3 {
     font-weight: 400;
-    font-family: "aglet-slab";
     font-size: 24px;
-    color: #282233;
     letter-spacing: 0;
-    text-align: center;
     line-height: 36px;
 }
 
@@ -73,7 +66,6 @@ ol {
     line-height: 30px;
     margin: 0;
     font-weight: 400;
-    color: #fbf3ed;
 }
 
 ul {
@@ -104,7 +96,6 @@ q:after {
 }
 
 span.superscript {
-    vertical-align: super;
     font-size: 15px;
 }
 
@@ -126,131 +117,26 @@ li {
     padding-bottom: 15px;
 }
 
-.bold {
-    font-weight: 800;
-}
-
-.nav {
-    background: rgba(58, 60, 40, 0.70);
-    position: absolute;
+.hero {
+    display: block;
+    margin: 0 auto;
+    max-height: 900px;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    font-family: "hwt-artz";
-    font-size: 30px;
-    font-weight: 700;
-    height: 60px;
-    z-index: 999;
-    padding: 0 40px;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-headline {
-    padding-top: 14px;
-    font-family: "hwt-artz";
-    font-weight: 700;
-    font-size: 30px;
+.topline {
+    font-size: 20px;
     text-transform: uppercase;
-    color: #FFFAC9;
-    letter-spacing: 0.76px;
-    text-align: center;
 }
 
-.nav-links-hidden {
-    display: none;
-}
-
-.nav-links {
-    display: inline-block;
-    float: right;
-    color: #363513;
-    padding-top: 10px;
-}
-
-.nav-button {
-    display: inline-block;
-    background: #363513;
-    color: #FCFFEC;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 800;
-    font-size: 16px;
-}
-
-.nav-button:hover {
-    background: #306319;
-    transition: all;
-    transition: .1s;
-    text-decoration: none;
-}
-
-.nav-link {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-a.nav-link:hover {
-    text-decoration: none;
-    color: #fff;
-    transition: all;
-    transition: .1s;
-}
-
-.logo-container {
-    width: 680px;
-    height: 425px;
-    padding: 30px 40px;
-    font-size: 30px;
-    text-align: center;
-    top: 255px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: absolute;
-    background: rgba(58, 60, 40, 0.70);
-    border: 4px solid #E4EF7F;
-    border-radius: 24px;
-    font-family: "hwt-artz";
-    font-size: 40px;
-    color: #F7A26C;
-    letter-spacing: 6.9px;
-}
-
-.logo {
-    margin-top: 12px;
-    background-image: url(../img/guac-off-2018-logo.svg);
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 613px;
-    height: 145px;
-}
-
-.logo-date {
-    margin-bottom: 22px;
-}
-
-.hero-button {
-    padding: 24px 0;
-    width: 280px;
-    border-radius: 6px;
-    font-family: "hwt-artz";
-    font-size: 32px;
-    color: #282233;
-    letter-spacing: 3px;
-    text-align: center;
-    float: left;
-    display: inline-block;
-}
-
-a.button--compete {
-    background-color: #F7A26C;
-}
-
-a.button--rsvp {
-    background-color: #FFFAC9;
-    float: right;
-}
-
-a.hero-button:hover {
-    text-decoration: none;
-    background-color: #E3EB9D;
+.logotype {
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 .columns-12 {
@@ -265,224 +151,8 @@ a.hero-button:hover {
     display: block;
 }
 
-.hero {
-    display: block;
-    margin: 0 auto;
-    max-height: 900px;
-    background-color: #E3EB9D;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-video {
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translateX(-50%);
-    mix-blend-mode: multiply;
-    background-image: url(../img/mobile_hero.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
-}
-
-.intro {
-    padding: 100px 0;
-    background-color: #FFFAC9;
-}
-
-.intro h1 {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.intro h2 {
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 88px;
-}
-
-.whenwhere {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.whenwhere-left {
-    display: inline-block;
-    width: 300px;
-    margin-right: 120px;
-}
-
-.whenwhere-right {
-    display: inline-block;
-    margin-left: 100px;
-}
-
-.when-label {
-    background-color: #F7A26C;
-    height: 220px;
-    width: 220px;
-    border-radius: 300px;
-    padding-top: 11px;
-    display: inline-block;
-    margin-bottom: 70px;
-}
-
-.where-label {
-    background-color: #E3EB9D;
-    height: 220px;
-    width: 220px;
-    border-radius: 300px;
-    padding-top: 11px;
-    display: inline-block;
-    margin-bottom: 70px;
-}
-
-.whenwhere-text {
-    margin-top: -50px;
-}
-
-.whenwhere-text a:hover {
-    text-decoration: underline;
-    border-bottom: 10px solid #E3EB9D;
-    text-decoration: none;
-}
-
-.details {
-    background-color: #363513;
-    padding: 140px 0 40px;
-}
-
-.detail {
-    display: flex;
-    margin-bottom: 50px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 60px;
-}
-
-.detail-left-photo {
-    background-color: #E3EB9D;
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-    mix-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-}
-
-.detail-right-photo {
-    background-color: #E3EB9D;
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-    mix-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-    float: right;
-}
-
-.detail-right-text {
-    display: inline-block;
-    padding: 100px 50px;
-    background-color: #282233;
-    float: right;
-    width: 50%;
-    height: 500px;
-    font-family: "aglet-slab";
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFAC9;
-    letter-spacing: 0;
-    line-height: 32px;
-}
-
-.detail-right-text:last-child {
-    background-color: #F7A26C;
-}
-
-.detail-left-text {
-    display: inline-block;
-    padding: 100px 50px;
-    background-color: #FFFAC9;
-    width: 50%;
-    height: 500px;
-    font-family: "aglet-slab";
-    font-weight: 400;
-    font-size: 20px;
-    color: #282233;
-    letter-spacing: 0;
-    line-height: 32px;
-}
-
-.detail-right-text h1 {
-    color: #FFFAC9;
-    text-align: left;
-}
-
-.detail-left-text h1 {
-    color: #F7A26C;
-    text-align: left;
-}
-
-.detail-right-text:last-child h1 {
-    color: #FFFAC9;
-}
-
-.detail-left-text p {
-    color: #282233;
-    font-size: 20px;
-}
-
-.detail-max-left {
-    max-width: 500px;
-    float: right;
-}
-
-.detail-max-right {
-    max-width: 500px;
-}
-
-div#detail-photo-1 {
-    background-image: url(../img/guac_party.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-div#detail-photo-2 {
-    background-image: url(../img/guacs@2x.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-div#detail-photo-3 {
-    background-image: url(../img/party@2x.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.big-p {
-    font-size: 22px;
-    font-weight: 800;
-    padding-bottom: 20px;
-}
 
 div#the-schedule {
-    color: #282233;
-    background-color: #F7A26C;
 }
 
 .schedule-item {
@@ -495,13 +165,10 @@ div#the-schedule {
 }
 
 .awards-section {
-    background-color: #282233;
     padding: 60px 0;
 }
 
 .awards-section h1 {
-    text-align: center;
-    color: #E4EF7F;
 }
 
 .awards-section ul {
@@ -510,83 +177,30 @@ div#the-schedule {
 }
 
 .awards-section li {
-    text-align: left;
     margin: 0 auto;
     max-width: 600px;
 }
 
 .award {
-    color: #FBFFDC;
     font-size: 24px;
     display: block;
 }
 
 li.award {
     margin-bottom: 20px;
-    text-align: center;
-}
-
-p.legal {
-    text-align: center;
-}
-
-.red {
-    color: #EF7068;
-}
-
-.green {
-    color: #E6F186;
-}
-
-.brown {
-    color: #A57436;
 }
 
 .button {
     padding: 24px 40px;
-    text-align: center;
-    font-family: "hwt-artz";
+    font-family: 'Rubik', sans-serif;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
     display: inline-block;
 }
 
-.button:hover {
-    text-decoration: none;
-}
-
-.button--hero {
-    bottom: 0;
-    float: none;
-    background-color: #97bd33;
-    background-size: 50%;
-    margin: 0 auto;
-    width: 280px;
-    opacity: .9;
-    color: #faf2ec;
-    font-size: 30px;
-    border: 2px solid #221d00;
-    display: block;
-    margin-top: 200px;
-}
-
-.button--hero:hover {
-    background-color: #afcf4f;
-    text-decoration: none;
-}
-
-.button--hero:active {
-    background-color: #7ec325;
-}
-
-.button--hero:focus {
-    outline: none;
-}
-
 .button--submit {
     font-size: 32px;
-    color: #fff;
     height: 100px;
     padding-top: 18px;
     background: #282233;
@@ -596,17 +210,12 @@ p.legal {
 }
 
 .button--submit:hover {
-    color: #282233;
-    background-color: #E4EF7F;
 }
 
 .button--submit:active {
-    color: #282233;
-    background-color: #E4EF7F;
 }
 
 .form-section {
-    background-color: #F7A26C;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -618,7 +227,6 @@ p.legal {
 }
 
 .form-container h2 {
-    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -668,7 +276,6 @@ div#ck-friends {
 }
 
 .ck-button label span {
-    text-align: center;
     padding: 3px 0px;
     display: block;
     border: 2px solid #fffac9;
@@ -682,9 +289,7 @@ div#ck-friends {
 }
 
 .ck-button input:checked+span {
-    background-color: #E4EF7F;
     border: 1px solid #E4EF7F;
-    color: #282233;
     height: 72px;
 }
 
@@ -698,26 +303,10 @@ div#ck-friends {
 }
 
 .disclaimer {
-    text-align: center;
-    color: #282233;
     padding: 80px 0 0 0;
 }
 
-.rsvp-circle {
-    font-family: "gothic-open-shaded";
-    font-size: 106px;
-    color: #282233;
-    text-align: center;
-    background-color: #E4EF7F;
-    height: 220px;
-    width: 220px;
-    border-radius: 300px;
-    padding-top: 60px;
-    margin: 0 auto 70px;
-}
-
 .celebrity-judges {
-    background-color: #E3EB9D;
     padding: 100px 0;
 }
 
@@ -728,11 +317,9 @@ div#ck-friends {
 }
 
 .judge-name {
-    text-align: center;
-    color: #282233;
     font-size: 30px;
     padding-top: 30px;
-    font-family: "aglet-slab";
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
 }
 
@@ -772,9 +359,7 @@ div#ck-friends {
 }
 
 .sponsors-section {
-    background-color: #FCFFEC;
     padding: 100px 0 0 0;
-    text-align: center;
 }
 
 .sponsors-section:last-of-type {
@@ -940,7 +525,6 @@ div#ck-friends {
 }
 
 .success-page {
-    background-color: #E3EB9D;
 }
 
 .success-intro {
@@ -957,11 +541,10 @@ div#ck-friends {
 }
 
 .success-intro-left h1 {
-    text-align: right;
 }
 
 .success-body {
-    font-family: "aglet-slab";
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
@@ -972,39 +555,30 @@ div#ck-friends {
 .success-share-calendar {
     clear: both;
     margin-top: 300px;
-    text-align: center;
 }
 
 .button.button-calendar {
-    background-color: #F7A26C;
-    color: #FFFAC9;
     width: 400px;
     font-size: 32px;
     margin-right: 30px;
 }
 
 .button.button-share {
-    background-color: #FFFAC9;
-    color: #F7A26C;
     width: 400px;
     font-size: 32px;
 }
 
 .button.button-calendar:hover {
-    background-color: #282233;
     \
 }
 
 .button.button-share:hover {
-    background-color: #282233;
 }
 
 label {
     font-size: 20px;
-    color: #282233;
     font-weight: 400;
     display: block;
-    text-align: left;
     margin-bottom: 22px;
     text-transform: uppercase;
 }
@@ -1012,7 +586,6 @@ label {
 .checkbox-header {
     font-size: 20px;
     font-weight: 400;
-    text-align: left;
     padding: 40px 0 20px 0;
     text-transform: uppercase;
 }
@@ -1020,20 +593,18 @@ label {
 .form-input {
     height: 80px;
     padding-left: 20px;
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     background: #FBFFDC;
     border-radius: 4px;
     border: none;
     width: 315px;
-    color: #282233;
     float: left;
 }
 
 .form-input::-webkit-input-placeholder {
     font-size: 18px;
-    color: #F7A26C;
-    font-family: "aglet-slab";
+    font-family: 'Rubik', sans-serif;
 }
 
 canvas {
@@ -1047,18 +618,16 @@ canvas {
 
 
 .stats-new {
-    background-color: #E3EB9D;
     padding: 50px;
 }
 
 .stats-compared {
-    background-color: #F7A26C;
 
     padding: 50px;
 }
 
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- 
 
 @media only screen and (max-width: 800px) {
     html,
@@ -1095,18 +664,12 @@ canvas {
         height: 90px;
         background-position: 50% 0;
     }
-    .hero-button {
-        float: none;
-    }
     a.button--rsvp {
         float: none;
         margin-top: 15px;
     }
     .nav {
         display: none;
-    }
-    .hero {
-        max-height: 660px
     }
     .columns-12 {
         padding: 0 15px;
@@ -1124,7 +687,7 @@ canvas {
     }
     .detail-left-photo {
         width: 100%;
-        background-color: #E3EB9D;
+
         display: block;
         height: 300px;
         float: none;
@@ -1151,7 +714,7 @@ canvas {
         float: none;
     }
     li.award {
-        text-align: left;
+
         margin-bottom: 5px;
         ;
     }
@@ -1190,7 +753,7 @@ canvas {
         margin: 0 auto;
     }
     .success-intro-left h1 {
-        text-align: left;
+
     }
     .success-share-calendar {
         margin: 50px 0;
@@ -1208,7 +771,7 @@ canvas {
         margin: 0 auto 0px;
     }
     .form-group {
-        text-align: center;
+
         margin-bottom: 20px;
         margin: 15px;
     }
@@ -1216,7 +779,7 @@ canvas {
         float: none;
     }
     .checkbox-header {
-        text-align: center;
+
     }
     .ck-button {
         margin: 0 auto;
@@ -1268,3 +831,4 @@ canvas {
         padding: 10px 0 0 0;
     }
 }
+*/
