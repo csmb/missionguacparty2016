@@ -8,5 +8,4 @@ tmp/*
 database.db
 
 # This one weird trick to not setup a local env
-/views/styles/*
-/views/*.html
+/public/*.html
