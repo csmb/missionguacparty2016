@@ -14,68 +14,6 @@ body {
     line-height: 24px;
     color: #FFF;
     background: linear-gradient(174deg, #ff8c73, #f96575, #74496e, #002a59);
-
-
-    /*-webkit-animation: AnimationName 29s ease infinite;
-    -moz-animation: AnimationName 29s ease infinite;
-    -o-animation: AnimationName 29s ease infinite;
-    animation: AnimationName 29s ease infinite;
-
-    @-webkit-keyframes AnimationName {
-        0% {
-            background-position: 0% 11%
-        }
-
-        50% {
-            background-position: 100% 90%
-        }
-
-        100% {
-            background-position: 0% 11%
-        }
-    }
-
-    @-moz-keyframes AnimationName {
-        0% {
-            background-position: 0% 11%
-        }
-
-        50% {
-            background-position: 100% 90%
-        }
-
-        100% {
-            background-position: 0% 11%
-        }
-    }
-
-    @-o-keyframes AnimationName {
-        0% {
-            background-position: 0% 11%
-        }
-
-        50% {
-            background-position: 100% 90%
-        }
-
-        100% {
-            background-position: 0% 11%
-        }
-    }
-
-    @keyframes AnimationName {
-        0% {
-            background-position: 0% 11%
-        }
-
-        50% {
-            background-position: 100% 90%
-        }
-
-        100% {
-            background-position: 0% 11%
-        }
-    }*/
 }
 
 p,
@@ -104,8 +42,8 @@ h5 {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 36px;
+    line-height: 42px;
     font-weight: 900;
     letter-spacing: 0.52px;
     margin-bottom: 30px;
@@ -115,14 +53,15 @@ h2 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0;
-    line-height: 60px;
+    line-height: 28px;
+    margin-bottom: 16px;
 }
 
 h3 {
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0;
-    line-height: 36px;
+    font-weight: 400;
 }
 
 p,
@@ -187,6 +126,12 @@ li {
     padding-bottom: 15px;
 }
 
+.columns-12 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 .sutro-bg {
     position: fixed;
     height: 100%;
@@ -221,7 +166,7 @@ li {
 }
 
 .logotype {
-    font-size: 64px;
+    font-size: 62px;
     line-height: 60px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
@@ -229,10 +174,8 @@ li {
     text-align: center;
 }
 
-.columns-12 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+.intro {
+    margin-bottom: 120px;
 }
 
 .container {
@@ -244,9 +187,6 @@ li {
 .info-section {
     margin-bottom: 36px;
 }
-
-
-div#the-schedule {}
 
 .schedule-item {
     margin-bottom: 30px;
@@ -260,8 +200,6 @@ div#the-schedule {}
 .awards-section {
     padding: 60px 0;
 }
-
-.awards-section h1 {}
 
 .awards-section ul {
     margin: 0 auto;
@@ -279,7 +217,9 @@ div#the-schedule {}
 }
 
 li.award {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .button {
@@ -300,10 +240,6 @@ li.award {
     width: 100%;
     letter-spacing: 3px;
 }
-
-.button--submit:hover {}
-
-.button--submit:active {}
 
 .form-section {
     padding-top: 100px;
@@ -396,9 +332,6 @@ div#ck-friends {
     padding: 80px 0 0 0;
 }
 
-.celebrity-judges {
-    padding: 100px 0;
-}
 
 .judge {
     display: inline-block;
@@ -446,10 +379,6 @@ div#ck-friends {
 
 #judge-comet {
     background-image: url("../img/judge-comet.jpg")
-}
-
-.sponsors-section {
-    padding: 100px 0 0 0;
 }
 
 .sponsors-section:last-of-type {
@@ -614,8 +543,6 @@ div#ck-friends {
     background-image: url("../img/imprerfect-produce.jpg")
 }
 
-.success-page {}
-
 .success-intro {
     padding-top: 200px;
     max-width: 1200px;
@@ -628,8 +555,6 @@ div#ck-friends {
     max-width: 45%;
     margin-right: 50px;
 }
-
-.success-intro-left h1 {}
 
 .success-body {
     font-family: 'Rubik', sans-serif;
@@ -659,8 +584,6 @@ div#ck-friends {
 .button.button-calendar:hover {
     \
 }
-
-.button.button-share:hover {}
 
 label {
     font-size: 20px;
@@ -714,256 +637,137 @@ canvas {
 }
 
 
-/* Smartphones (portrait) ----------- 
+/* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 800px) {
+
     html,
     body {
         margin: 0;
-        /* remove default margin */
-padding: 0;
-/* remove default padding */
-width: 100%;
-/* take full browser width */
-height: 100%;
-/* take full browser height*/
-display: block;
+        remove default margin padding: 0;
+        remove default padding width: 100%;
+        take full browser width height: 100%;
+        take full browser height display: block;
+    }
+
+    .judge {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .judge-photo {
+        margin: 0 auto;
+    }
+
+    .success-intro {
+        padding-top: 50px;
+    }
+
+    .success-intro-left {
+        display: block;
+        float: none;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .success-body {
+        display: block;
+        max-width: 75%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .success-share-calendar {
+        margin: 50px 0;
+    }
+
+    .button.button-calendar {
+        margin: 0 0 30px 0;
+    }
+
+    a.button.button-calendar {
+        width: 100%;
+    }
+
+    a.button.button-share {
+        width: 100%;
+    }
+
+    .rsvp-circle {
+        margin: 0 auto 0px;
+    }
+
+    .form-group {
+
+        margin-bottom: 20px;
+        margin: 15px;
+    }
+
+    .form-group-text-input:last-child {
+        float: none;
+    }
+
+
+    .ck-button {
+        margin: 0 auto;
+        float: none;
+        width: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .ck-button label {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-container h2 {
+        margin-bottom: 30px;
+    }
+
+    .form-group-text-input {
+        margin-bottom: 20px;
+    }
+
+    .form-group-text-input:last-child {
+        margin-bottom: 0;
+    }
+
+    .form-input {
+        height: 50px;
+    }
+
+    .ck-button label {
+        height: 50px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .checkbox-header {
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 21px 0 0px 0;
+    }
+
+    .ck-button label span {
+        padding: 10px;
+    }
+
+    .ck-button label>input:checked {
+        height: 50px;
+    }
+
+    .ck-button input:checked+span {
+        height: 50px;
+        padding: 13px;
+    }
+
+    .disclaimer {
+        padding: 10px 0 0 0;
+    }
 }
-
-h1 {
-    font-size: 40px;
-    line-height: 45px;
-    font-weight: 900;
-}
-
-h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.logo-container {
-    width: 90%;
-    top: 100px;
-    font-size: 26px;
-    padding: 20px 10px;
-    letter-spacing: 3px;
-    height: auto;
-}
-
-.logo {
-    width: 100%;
-    background-size: contain;
-    height: 90px;
-    background-position: 50% 0;
-}
-
-a.button--rsvp {
-    float: none;
-    margin-top: 15px;
-}
-
-.nav {
-    display: none;
-}
-
-.columns-12 {
-    padding: 0 15px;
-}
-
-.intro {
-    height: auto;
-    padding-bottom: 100px;
-}
-
-.intro h2 {
-    width: auto;
-}
-
-.whenwhere-right {
-    display: inline-block;
-    margin: 50px 0;
-}
-
-.detail-left-photo {
-    width: 100%;
-
-    display: block;
-    height: 300px;
-    float: none;
-}
-
-.detail-right-photo {
-    width: 100%;
-    display: block;
-    float: none;
-    height: 300px;
-}
-
-.detail-right-text {
-    width: 100%;
-    display: block;
-    float: none;
-    height: auto;
-}
-
-.detail-left-text {
-    width: 100%;
-    display: block;
-    float: none;
-    height: auto;
-}
-
-.detail-max-left {
-    float: none;
-}
-
-li.award {
-
-    margin-bottom: 5px;
-    ;
-}
-
-.time {
-    display: block;
-}
-
-.whenwhere-left,
-.whenwhere-right {
-    width: 90%;
-    margin: 0 0 50px 0;
-}
-
-.button--submit {
-    width: 90%;
-}
-
-.judge {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.judge-photo {
-    margin: 0 auto;
-}
-
-.success-intro {
-    padding-top: 50px;
-}
-
-.success-intro-left {
-    display: block;
-    float: none;
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-.success-body {
-    display: block;
-    max-width: 75%;
-    float: none;
-    margin: 0 auto;
-}
-
-.success-intro-left h1 {}
-
-.success-share-calendar {
-    margin: 50px 0;
-}
-
-.button.button-calendar {
-    margin: 0 0 30px 0;
-}
-
-a.button.button-calendar {
-    width: 100%;
-}
-
-a.button.button-share {
-    width: 100%;
-}
-
-.rsvp-circle {
-    margin: 0 auto 0px;
-}
-
-.form-group {
-
-    margin-bottom: 20px;
-    margin: 15px;
-}
-
-.form-group-text-input:last-child {
-    float: none;
-}
-
-.checkbox-header {}
-
-.ck-button {
-    margin: 0 auto;
-    float: none;
-    width: auto;
-    padding: 0;
-    margin-bottom: 10px;
-}
-
-.ck-button label {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.form-container h2 {
-    margin-bottom: 30px;
-}
-
-.form-group-text-input {
-    margin-bottom: 20px;
-}
-
-.form-group-text-input:last-child {
-    margin-bottom: 0;
-}
-
-.form-input {
-    height: 50px;
-}
-
-.ck-button label {
-    height: 50px;
-}
-
-label {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.checkbox-header {
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 21px 0 0px 0;
-}
-
-.ck-button label span {
-    padding: 10px;
-}
-
-.ck-button label>input:checked {
-    height: 50px;
-}
-
-.ck-button input:checked+span {
-    height: 50px;
-    padding: 13px;
-}
-
-.disclaimer {
-    padding: 10px 0 0 0;
-}
-}
-
-*/
