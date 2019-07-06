@@ -181,27 +181,27 @@ body,html{margin:0;padding:0;}
 
 .sun::after {
     background-image: url(../img/bg_sun.png);
-    transform: translateZ(-5px) scale(2.5);
-    background-position-y: 30px;
-    background-size: 50%;
-    background-position-x: 0;
+    transform: translateZ(-1px) scale(2.5);
+    background-position-y: 200px;
+    background-size: 25%;
+    background-position-x: 100px;
 }
 
 .backhill::after {
     background-image: url(../img/bg_back_hill.png);
-    transform: translateZ(-4px) scale(3);
-    top: 200px;
+    transform: translateZ(-.75px) scale(1.5);
+    top: -210px;
 }
 
 .fronthill::after {
     background-image: url(../img/bg_front_hill.png);
-    transform: translateZ(-3px) scale(2.5);
+    transform: translateZ(-.5px) scale(2.5);
     top: -180px;
 }
 
 .avosutro::after {
     background-image: url(../img/bg_avo_with_pit.png);
-    transform: translateZ(-2px) scale(2);
+    transform: translateZ(-.25px) scale(2);
     top: -1140px;
 }
 
@@ -236,6 +236,7 @@ body,html{margin:0;padding:0;}
     width: 100%;
     position: relative;
     overflow: hidden;
+    background-image: url(../img/hero_bg.svg);
 }
 
 .topline {
@@ -246,7 +247,7 @@ body,html{margin:0;padding:0;}
     line-height: 25px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 240px;
+    padding-top: 120px;
 }
 
 .logotype {
