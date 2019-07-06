@@ -13,7 +13,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #FFF;
-    background: linear-gradient(174deg, #ff8c73, #f96575, #74496e, #002a59);
+    background: linear-gradient(180deg, #FD9686 0%, #FCC7B2 19.61%, #FFA292 40%, #8A66E0 62.28%, #212A5D 85.96%, #000001 100%);
 }
 
 p,
@@ -54,7 +54,6 @@ h2 {
     font-weight: 700;
     letter-spacing: 0;
     line-height: 28px;
-    margin-bottom: 16px;
 }
 
 h3 {
@@ -125,6 +124,91 @@ li {
     display: inline-block;
     padding-bottom: 15px;
 }
+
+
+/* PARALLAX */
+
+/* Tiny reset thingy */
+body,html{margin:0;padding:0;}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: red;
+}
+
+.sun::after {
+    background-image: url(../img/bg_sun.png);
+    transform: translateZ(-5px) scale(2.5);
+    background-position-y: 30px;
+    background-size: 50%;
+    background-position-x: 0;
+}
+
+.backhill::after {
+    background-image: url(../img/bg_back_hill.png);
+    transform: translateZ(-4px) scale(3);
+    top: 200px;
+}
+
+.fronthill::after {
+    background-image: url(../img/bg_front_hill.png);
+    transform: translateZ(-3px) scale(2.5);
+    top: -180px;
+}
+
+.avosutro::after {
+    background-image: url(../img/bg_avo_with_pit.png);
+    transform: translateZ(-2px) scale(2);
+    top: -1140px;
+}
+
+
+/*  END PARALLAX */
+
+
 
 .columns-12 {
     max-width: 1200px;
@@ -643,11 +727,11 @@ canvas {
 
     html,
     body {
-        margin: 0;
+/*        margin: 0;
         remove default margin padding: 0;
         remove default padding width: 100%;
         take full browser width height: 100%;
-        take full browser height display: block;
+        take full browser height display: block;*/
     }
 
     .judge {
@@ -701,7 +785,6 @@ canvas {
     .form-group {
 
         margin-bottom: 20px;
-        margin: 15px;
     }
 
     .form-group-text-input:last-child {
@@ -719,7 +802,7 @@ canvas {
 
     .ck-button label {
         float: none;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
