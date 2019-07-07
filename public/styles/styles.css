@@ -11,9 +11,16 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
     color: #FFF;
-    background: linear-gradient(180deg, #FD9686 0%, #FCC7B2 19.61%, #FFA292 40%, #8A66E0 62.28%, #212A5D 85.96%, #000001 100%);
+}
+
+.sunset-zone {
+    background: linear-gradient(180deg, #FD9686 0%, #FCC7B2 19.61%, #FFA292 40%, #8A66E0 62.28%, #212A5D 100%);
+}
+
+.bottom-section {
+    background-color: #212A5D;
 }
 
 p,
@@ -115,7 +122,7 @@ p {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
     color: #FFF;
     padding-bottom: 20px;
 }
@@ -125,97 +132,12 @@ li {
     padding-bottom: 15px;
 }
 
-
-/* PARALLAX */
-
-/* Tiny reset thingy */
-body,
-html {
-    margin: 0;
-    padding: 0;
+li a:hover {
+    text-decoration: underline;
 }
-
-.wrapper {
-    /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-    height: 100vh;
-    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-    overflow-x: hidden;
-    /* Enable scrolling on the page. */
-    overflow-y: auto;
-    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-    perspective: 2px;
-}
-
-.section {
-    /* Needed for children to be absolutely positioned relative to the parent. */
-    position: relative;
-    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-    height: 100vh;
-    /* For text formatting. */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.parallax::after {
-    /* Display and position the pseudo-element */
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
-}
-
-/* The styling for the static div. */
-.static {
-    background: red;
-}
-
-.sun::after {
-    background-image: url(../img/bg_sun.png);
-    transform: translateZ(-1px) scale(2.5);
-    background-position-y: 200px;
-    background-size: 25%;
-    background-position-x: 100px;
-}
-
-.backhill::after {
-    background-image: url(../img/bg_back_hill.png);
-    transform: translateZ(-.75px) scale(1.5);
-    top: -210px;
-}
-
-.fronthill::after {
-    background-image: url(../img/bg_front_hill.png);
-    transform: translateZ(-.5px) scale(2.5);
-    top: -180px;
-}
-
-.avosutro::after {
-    background-image: url(../img/bg_avo_with_pit.png);
-    transform: translateZ(-.25px) scale(2);
-    top: -1140px;
-}
-
-
-/*  END PARALLAX */
-
-
 
 .columns-12 {
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -231,15 +153,12 @@ html {
 }
 
 .hero {
-    display: block;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    height: 110%;
-    width: 100%;
+    height: 870px;
     position: relative;
-    background-image: url(../img/hero_bg.svg);
-    background-size: 100%;
+    background-image: url(../img/wide_hero.svg);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 
@@ -262,7 +181,7 @@ html {
 }
 
 .time {
-    margin-top: 430px;
+    margin-top: 462px;
 }
 
 .intro {
@@ -283,7 +202,7 @@ html {
     position: relative;
     text-align: right;
     height: 300;
-    width: 327px;
+    width: 100%;
     margin-top: 24px;
     box-sizing: content-box;
     border: 4px solid #7057BF;
@@ -294,7 +213,7 @@ html {
     overflow: hidden;
     background: none !important;
     height: 300px;
-    width: 327px;
+    width: 100%;
 }
 
 .container {
@@ -372,6 +291,10 @@ li.award {
     padding-bottom: 64px;
 }
 
+.form-group-text-input {
+    display: inline-block;
+}
+
 .form-container {
     max-width: 660px;
     margin: 0 auto;
@@ -382,7 +305,6 @@ label {
     display: block;
     margin-bottom: 8px;
     text-transform: uppercase;
-    padding-top: 24px;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 25px;
@@ -396,7 +318,7 @@ label {
     background: #FCC1AD;
     border-radius: 4px;
     border: none;
-    width: 315px;
+    max-width: 300px;
     float: left;
     color: #7057BF;
     margin-bottom: 24px;
@@ -522,7 +444,7 @@ input {
 
 .judge-photo {
     height: 300px;
-    width: 300px;
+    max-width: 300px;
     border-radius: 100%;
     background-size: cover;
 }
@@ -556,7 +478,7 @@ input {
 }
 
 .sponsors-section h1 {
-    margin-bottom: 80px;
+    margin-bottom: 24px;
 }
 
 .sponsors {
@@ -744,13 +666,13 @@ input {
 }
 
 .button.button-calendar {
-    width: 400px;
+    max-width: 300px;
     font-size: 32px;
     margin-right: 30px;
 }
 
 .button.button-share {
-    width: 400px;
+    max-width: 300px;
     font-size: 32px;
 }
 
