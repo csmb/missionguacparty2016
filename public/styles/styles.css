@@ -7,7 +7,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
-    cursor: url("../img/avotrans.ico"), default !important;
+    cursor: url("../img/avotrans_hover.ico"), default !important;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -116,6 +116,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: url("../img/avotrans_2019.ico"), default !important;
 }
 
 p {
@@ -134,10 +135,11 @@ li {
 
 li a:hover {
     text-decoration: underline;
+    cursor: url("../img/avotrans_2019.ico"), default !important;
 }
 
 .columns-12 {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -185,7 +187,8 @@ li a:hover {
 }
 
 .intro {
-    margin-bottom: 120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     text-align: center;
 }
 
@@ -203,7 +206,7 @@ li a:hover {
     text-align: right;
     height: 300;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 48px;
     box-sizing: content-box;
     border: 4px solid #7057BF;
     border-radius: 4px;
@@ -223,13 +226,17 @@ li a:hover {
 }
 
 .info-section {
-    margin-bottom: 36px;
+    padding-bottom: 36px;
+    padding-top: 36px;
 }
 
 .schedule-item {
     margin-bottom: 30px;
 }
 
+.sched-time {
+    font-weight: 800;
+}
 
 
 .awards-section {
@@ -246,17 +253,14 @@ li a:hover {
     max-width: 600px;
 }
 
-.award {
-    font-size: 24px;
-    display: block;
-}
-
 li.award {
+    margin-right: 24px;
     margin-bottom: 8px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 600;
     text-transform: uppercase;
+    color: #FFA292;
 }
 
 .button {
@@ -279,6 +283,7 @@ li.award {
 .button:hover {
     background-color: #413C85;
     color: #FCC1AD;
+    cursor: url("../img/avotrans_2019.ico"), default !important;
 }
 
 .button:active {
@@ -296,7 +301,7 @@ li.award {
 }
 
 .form-container {
-    max-width: 660px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
 }
@@ -418,12 +423,24 @@ input {
     font-size: 18px;
     color: #7057BF;
     font-weight: 700;
+    cursor: url("../img/avotrans_2019.ico"), default !important;
+}
+
+input:hover {
+    cursor: url("../img/avotrans_2019.ico"), default !important;
 }
 
 .disclaimer {
     padding: 80px 0 0 0;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: inherit;
+}
 
 .judge {
     display: inline-block;
@@ -482,13 +499,14 @@ input {
 }
 
 .sponsors {
-    padding: 0 auto;
-    margin: 0 auto;
+    margin: 24px auto;
     display: block;
 }
 
 .sponsors li {
-    display: block;
+    margin-right: 24px;
+    margin-bottom: 8px;
+    font-size: 16px;
 }
 
 .sponsor {
@@ -695,6 +713,9 @@ canvas {
     padding: 50px;
 }
 
+.success-page {
+    background: linear-gradient(180deg, #FD9686 0%, #FCC7B2 19.61%, #FFA292 40%, #8A66E0 62.28%, #212A5D 100%);
+}
 
 /* Smartphones (portrait) ----------- */
 
@@ -707,6 +728,10 @@ canvas {
         remove default padding width: 100%;
         take full browser width height: 100%;
         take full browser height display: block;*/
+    }
+
+    .sched-time {
+        display: block;
     }
 
     .judge {

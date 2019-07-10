@@ -56,47 +56,59 @@
                 <h2>3340 Folsom St.</h2>
                 <h2>San Francisco</h2>
             </a>
-            <div class="mapouter">
+            <!-- <div class="mapouter">
                 <div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=3340%20Folsom%20St%2C%20San%20Francisco%2C%20CA%2094110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-            </div>
+            </div> -->
         </div>
         <div class="info-section columns-12">
             <h1 class="dark-purple">Here's what to expect</h1>
-            <div class="big-emoji">🥑</div>
+            <!-- <div class="big-emoji">🥑</div> -->
             <h2>The "rules"</h2>
-            <p>You must use at last eight avocados. The rest is up to you.</p>
-            <p>Bring something. Guacamole, beer, or friends.</p>
-            <p>We've got the chips, the music, and the prizes covered.</p>
+            <p>1. You must use at last eight avocados. The rest is up to you.
+                <br>2. Bring something: Guacamole, beer, or friends.<br>3. We've got the chips, the music, and the prizes covered.
         </div>
         <div class="info-section columns-12">
-            <div class="big-emoji">🏆</div>
+            <!-- <div class="big-emoji">🏆</div> -->
             <h2>The Competition</h2>
             <p>You, your friends, and your neighbors are the judges. You’ll be asked to vote with your eyes, your heart, and of course, your taste buds.</p>
             <p>Everyone will be given a few tokens to vote with to make things real easy. You’ll drop a token or two into the cup next to your favorite guacs. We’ll count the tokens to determine top prizes</p>
         </div>
         <div class="info-section columns-12">
-            <div class="big-emoji">🥇</div>
+            <!-- <div class="big-emoji">🥇</div> -->
             <h2>The Winners</h2>
             <p>The winner to be crowned with the Guacamole Glory Trophy and their recipe will be deemed, “San Francisco’s Official Guacamole.”</p>
             <p>All competitors receive bragging rights until next Indian Summer. </p>
             <p>All prizes come courtesy of our wonderful local sponsors.</p>
         </div>
         <div class="info-section columns-12">
-            <h1 class="dark-purple">Prizes for</h1>
+            <h1>Schedule</h1>
+            <div class="schedule-item">
+                <span class="sched-time">1:00 – 1:30</span> Showcase Guacamoles</div>
+            <div class="schedule-item">
+                <span class="sched-time">1:30 - 3:00</span> Guacamole Competition</div>
+            <div class="schedule-item">
+                <span class="sched-time">3:00 - 3:30</span> Voting
+            </div>
+            <div class="schedule-item">
+                <span class="sched-time">3:30 - 4:00</span> Winners Announced</div>
+            <span class="bold">Party ends when the last chip is gone!</span>
+        </div>
+        <div class="info-section columns-12">
+            <h1>Prizes for</h1>
             <ul>
                 <li class="award">🏆&nbsp;&nbsp;Best Overall</li>
-                <li class="award">🍽&nbsp;&nbsp;Presentation</li>
+                <li class="award">🍽&nbsp;&nbsp;Best Presentation</li>
+                <li class="award">👨‍🎤&nbsp;&nbsp;Most Creative</li>
                 <li class="award">🎙&nbsp;&nbsp;Best Name</li>
                 <li class="award">🥑&nbsp;&nbsp;Most Avocados</li>
-                <li class="award">👨‍🎤&nbsp;&nbsp;Most Creative</li>
                 <li class="award">🔥&nbsp;&nbsp;Spiciest</li>
-                <li class="award">🙌&nbsp;&nbsp;Youngest Chef</li>
+                <li class="award">🙌&nbsp;&nbsp;Best Young Chef</li>
                 <li class="award">🏋️‍♀️&nbsp;&nbsp;Heaviest Bowl</li>
             </ul>
             <p class="legal">*Categories subject to being made up on the spot</p>
         </div>
         <div class="form-section columns-12" id="form">
-            <div class="form-container">
+            <div class="form-container" id="blankform">
                 <h1>Let us know that you're coming</h1>
                 <form role="form" method="post">
                     <div class="form-group">
@@ -133,9 +145,21 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="button">I'll be there!</button>
+                        <button type="submit" class="button" id="formsubmit">I'll be there!</button>
                     </div>
                 </form>
+            </div>
+            <div class="form-success hide" id="thanks">
+                <div class="success-intro">
+                    <h1>You just made an excellent decision</h1>
+                    <p>Invite your friends, lovers, pets, and cousins, and maybe even that cute guy from the apartment across the hall.
+                        <br>We'll send you a reminder email a day or two before the competition, but you should probably add September 14th to your calendar now.
+                </div>
+                <div class="success-share-calendar columns-12">
+                    <a href="#" class="button button-calendar">Update your calendar</a>
+                    <a href="https://twitter.com/intent/tweet?hashtags=guacoff2019&original_referer=https%3A%2F%2Fwww.guacamole.expert%2Fpartyon&ref_src=twsrc%5Etfw&text=I%27m%20going%20to%20the%208th%20Annual%20Indian%20Summer%20Guac%20Off!&tw_p=tweetbutton&url=https%3A%2F%2Fwww.guacamole.expert" class="button button-share">Tell your friends</a>
+                </div>
+                <canvas id="bg"></canvas>
             </div>
         </div>
     </div>
@@ -145,8 +169,10 @@
         </div>
         <div class="celebrity-judges columns-12">
             <h2>2018 Celebrity Judges</h2>
-            <div class="sponsor">
-                Emperor Norton
+            <div class="sponsors">
+                <ul>
+                    <li>Emperor Norton</li>
+                </ul>
             </div>
         </div>
         <div class="sponsors-section columns-12" id="all-sponsors">
@@ -248,17 +274,6 @@
             </div>
         </div>
     </div>
-    <script>
-    $('a[href^="# "]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
-    </script>
 </body>
 
 </html>
