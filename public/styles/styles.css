@@ -142,6 +142,7 @@ li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
 }
 
 .sutro-bg {
@@ -155,35 +156,49 @@ li a:hover {
 }
 
 .hero {
-    height: 870px;
     position: relative;
-    background-image: url(../img/wide_hero.svg);
+    /*background-image: url(../img/avo_tower.svg);*/
     background-size: inherit;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
 }
 
+.hero-bg {
+    pointer-events: none;
+    height: 680px;
+    width: 100%;
+    position: fixed;
+    background-image: url(../img/big_hero_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    bottom: 0;
+    mix-blend-mode: multiply;
+}
+
 .topline {
-    font-size: 20px;
+    font-size: 28px;
+    letter-spacing: 5.5px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
     line-height: 25px;
-    text-transform: uppercase;
-    padding-top: 130px;
+    padding-top: 300px;
 }
 
 .logotype {
-    font-size: 62px;
-    line-height: 60px;
+    font-size: 120px;
+    line-height: 90px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
+    margin-top: 30px;
 }
 
 .time {
-    margin-top: 462px;
+    margin-top: 430px;
 }
 
 .intro {
@@ -193,8 +208,8 @@ li a:hover {
 }
 
 .big-emoji {
-    font-size: 120px;
-    line-height: 120px
+    font-size: 36px;
+    line-height: 36px
 }
 
 .dark-purple {
@@ -228,6 +243,7 @@ li a:hover {
 .info-section {
     padding-bottom: 36px;
     padding-top: 36px;
+    position: relative;
 }
 
 .schedule-item {
