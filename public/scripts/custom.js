@@ -9,6 +9,8 @@ function hideDivs() {
 $(document).ready(function () {
     $('#formsubmit').on('submit', function(e) {
         e.preventDefault();
+        var url = $(this).attr('action') || window.location.pathname;
+        console.log(url);
         $.ajax({
             url : $(this).attr('action') || window.location.pathname,
             type: "POST",
@@ -18,7 +20,7 @@ $(document).ready(function () {
             	hideDivs();
             },
             error: function (jXHR, textStatus, errorThrown) {
-                alert(errorThrown);
+                console.log(errorThrown);
             }
         });
     });
