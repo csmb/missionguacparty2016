@@ -2,8 +2,8 @@ function hideDivs() {
 	var blankform = document.getElementById('blankform');
 	var formsubmit = document.getElementById('formsubmit');
 
-	blankform.classList.remove('hide');
-    thanks.classList.add('hide');
+	blankform.classList.add('hide');
+    thanks.classList.remove('hide');
 };
 
 $(document).ready(function () {
