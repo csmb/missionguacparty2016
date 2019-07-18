@@ -34,6 +34,8 @@
     ga('create', 'UA-34819223-6', 'auto');  
     ga('send', 'pageview');
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
     <title>Indian Summer Guac Off</title>
 </head>
 
@@ -109,7 +111,7 @@
         <div class="form-section columns-12" id="form">
             <div class="form-container" id="blankform">
                 <h1>Let us know that you're coming</h1>
-                <form role="form" method="post">
+                <form id="formsubmit" role="form" method="post">
                     <div class="form-group">
                         <div class="form-group-text-input">
                             <label>Name</label>
@@ -144,7 +146,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="button" id="formsubmit">I'll be there!</button>
+                        <button type="submit" class="button">I'll be there!</button>
                     </div>
                 </form>
             </div>

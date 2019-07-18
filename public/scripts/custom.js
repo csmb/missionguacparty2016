@@ -1,11 +1,25 @@
-var thanks = document.getElementById('thanks');
-var blankform = document.getElementById('blankform');
-var formsubmit = document.getElementById('formsubmit');
+function hideDivs() {
+	var blankform = document.getElementById('blankform');
+	var formsubmit = document.getElementById('formsubmit');
 
+	blankform.classList.remove('hide');
+    thanks.classList.add('hide');
+};
 
-formsubmit.addEventlistener('click', showthanks(e) {
-    e.preventDefault()
-    blankform.classList.add('hide')
-    thanks.classList.add('show')
-    thanks.classList.remove('hide')
+$(document).ready(function () {
+    $('#formsubmit').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            url : $(this).attr('action') || window.location.pathname,
+            type: "POST",
+            crossDomain: true,
+            data: $(this).serialize(),
+            success: function (data) {
+            	hideDivs();
+            },
+            error: function (jXHR, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+        });
+    });
 });

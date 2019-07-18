@@ -175,7 +175,7 @@ li a:hover {
     background-position: center;
     text-align: center;
     bottom: 0;
-    mix-blend-mode: multiply;
+    /*mix-blend-mode: multiply;*/
 }
 
 .topline {
