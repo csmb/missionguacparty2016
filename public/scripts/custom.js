@@ -14,7 +14,6 @@ $(document).ready(function () {
         $.ajax({
             url : $(this).attr('action') || window.location.pathname,
             type: "POST",
-            crossDomain: true,
             data: $(this).serialize(),
             success: function (data) {
             	hideDivs();

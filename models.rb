@@ -13,6 +13,7 @@ class GuacamoleEnthusiasts
   property :beer, Boolean
   property :guac, Boolean
   property :other, Boolean
+  # property :volunteer, Boolean
   property :created_at, DateTime
   property :updated_at, DateTime
   property :comments, String
