@@ -39,9 +39,6 @@ post '/' do
         merge_fields: merge_fields
       }
     )
-    erb :success
-  else
-    erb :home
   end
 rescue Gibbon::MailChimpError => e
   print "Oh no, an error occured: #{e}."
