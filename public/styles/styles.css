@@ -689,7 +689,7 @@ input:hover {
 
 .form-success {
     background-color: #ffa292;
-    padding: 80px;
+    padding: 40px;
     border-radius: 18px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
