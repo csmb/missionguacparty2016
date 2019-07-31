@@ -455,6 +455,7 @@ input:hover {
 }
 
 .hide {
+    display: none;
     opacity: 0;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
