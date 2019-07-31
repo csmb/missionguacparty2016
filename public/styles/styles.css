@@ -198,7 +198,7 @@ li a:hover {
 }
 
 .time {
-    margin-top: 430px;
+    margin-top: 250px;
 }
 
 .intro {
@@ -447,7 +447,7 @@ input:hover {
 }
 
 .disclaimer {
-    padding: 80px 0 0 0;
+    padding: 10px 0 0 0;
 }
 
 .hide {
@@ -671,6 +671,18 @@ input:hover {
 .sponsor-imperfect-produce {
     background-image: url("../img/imprerfect-produce.jpg")
 }*/
+
+
+.form-success {
+    background-color: #ffa292;
+    padding: 80px;
+    border-radius: 18px;
+    transition: auto;
+-webkit-transition: all 0.2s ease;
+-moz-transition:    all 0.2s ease;
+-ms-transition:     all 0.2s ease;
+-o-transition:      all 0.2s ease;
+}
 
 .success-intro {
     max-width: 1200px;
