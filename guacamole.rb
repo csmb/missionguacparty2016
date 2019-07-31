@@ -25,6 +25,7 @@ end
 
 post '/' do
   enthusiast = GuacamoleEnthusiasts.new(params)
+  # Check error on save, required field.
   if enthusiast.save
     gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_API_KEY'])
     merge_fields = { GUAC: (params[:guac].nil? ? "" : "true"),
@@ -38,9 +39,6 @@ post '/' do
         merge_fields: merge_fields
       }
     )
-    erb :success
-  else
-    erb :home
   end
 rescue Gibbon::MailChimpError => e
   print "Oh no, an error occured: #{e}."
