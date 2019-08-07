@@ -321,9 +321,9 @@ li.award {
     margin: 0 auto;
     padding: 0;
     -webkit-transition: all 0.2s ease;
-    -moz-transition:    all 0.2s ease;
-    -ms-transition:     all 0.2s ease;
-    -o-transition:      all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
 }
 
 label {
@@ -548,6 +548,10 @@ input:hover {
     background-position: center;
     width: 130px;
     height: 130px;
+}
+
+.sponsor-acute {
+    background-image: url("../img/acute.png");
 }
 
 .sponsor-littlechihuahua {
