@@ -542,15 +542,20 @@ input:hover {
 .sponsor {
     background-size: contain;
     background-repeat: no-repeat;
-    /*text-indent: -9999px;*/
+    text-indent: -9999px;
     display: block;
     margin-bottom: 16px;
     background-position: center;
-    background-image: none;
+    width: 130px;
+    height: 130px;
 }
 
-/*.sponsor-littlechihuahua {
+.sponsor-littlechihuahua {
     background-image: url("../img/little_chihuahua.png");
+}
+
+.sponsor-casa-sanchez {
+    background-image: url("../img/CS_Foods_logo.png");
 }
 
 .sponsor-cousin {
@@ -684,8 +689,7 @@ input:hover {
 
 .sponsor-imperfect-produce {
     background-image: url("../img/imprerfect-produce.jpg")
-}*/
-
+}
 
 .form-success {
     background-color: #ffa292;
