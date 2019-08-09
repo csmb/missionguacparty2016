@@ -1,17 +1,17 @@
 function hideDivs() {
   var blankform = document.getElementById('blankform');
   var formsubmit = document.getElementById('formsubmit');
+  var sunset = document.getElementById("sunset-zone");
 
-  blankform.classList.add('hide');
+  $("#blankform").fadeOut(400);
+  $("#formsubmit").fadeIn(200);
   thanks.classList.remove('hide');
+  sunset.scrollIntoView();
 };
 
 $(document).ready(function () {
   $('#formsubmit').on('submit', function(e) {
     e.preventDefault();
-    var url = $(this).attr('action') || window.location.pathname;
-    debugger;
-    console.log(url);
     $.ajax({
       url : $(this).attr('action') || window.location.pathname,
       type: "POST",
