@@ -49,6 +49,10 @@ get '/partyon' do
   erb :success
 end
 
+get '/guacwalk' do
+  erb :guacwalk
+end
+
 get '/definitelynotthestatspage' do
   now = DateTime.now
   registration_open_2019 = DateTime.new(2019, 8, 1)
