@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    #936549,
+    #222
+  );
+}
+
+.avoportal {
+  --x: 0px;
+  --y: 0px;
+  background-image: url(../img/map.png);
+  background-size: 1000px;
+  background-position: var(--x) var(--y);
+  border: 1px solid white;
+
+  width: 300px;
+  height: 300px;
+}
