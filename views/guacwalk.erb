@@ -15,16 +15,27 @@
 
     <title>GuacWalk 2020</title>
 </head>
-
-<div class="avoportal" id="avoportal">
-<link rel="stylesheet" type="text/css" href="styles/guacwalk_style.css">
-</div>
+<div class="spotlight"></div>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <script>
-  var el = document.querySelector("#avoportal");
+  window.addEventListener("DOMContentLoaded", () => {
+    const spotlight = document.querySelector('.spotlight');
+    let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
 
-  el.addEventListener("mousemove", (e) => {
-    el.style.backgroundPositionX = (-e.offsetX*2.75) + "px";
-    el.style.backgroundPositionY = (-e.offsetY*2.75) + "px";
+    window.addEventListener('mousemove', e => updateSpotlight(e));
+    window.addEventListener('touchmove', e => updateSpotlight(e));
+    window.addEventListener('mousedown', e => {
+        spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
+        updateSpotlight(e);
+    });
+    window.addEventListener('mouseup', e => {
+        spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
+        updateSpotlight(e);
+    });
+
+    function updateSpotlight(e) {
+      spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
+    }
   });
 </script>
 
