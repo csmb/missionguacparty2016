@@ -13,6 +13,7 @@
     <meta name="twitter:label2" value="Is this a competition?" />
     <meta name="twitter:data2" value="Absolutely! The trophy is amazing!" />
 
+    <!-- ToDo: Edit title and add favicon -->
     <title>GuacWalk 2020</title>
 </head>
 <html>
@@ -25,7 +26,7 @@
     let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
 
     window.addEventListener('mousemove', e => updateSpotlight(e));
-    window.addEventListener('touchmove', e => updateSpotlight(e));
+    // window.addEventListener('touchmove', e => updateSpotlight(e));
     window.addEventListener('mousedown', e => {
         spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
         updateSpotlight(e);
@@ -41,7 +42,7 @@
   });
 </script>
 
-<!-- Need to setup new property for GA before enabling -->
+<!-- ToDo: Setup new property for GA before enabling -->
 <!-- <script>
 (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
