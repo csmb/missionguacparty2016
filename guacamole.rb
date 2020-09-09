@@ -3,7 +3,7 @@ require 'pg'
 require 'rack-ssl-enforcer'
 require 'gibbon'
 
-require_relative './models'
+# require_relative './models'
 
 configure :production do
   use Rack::SslEnforcer
