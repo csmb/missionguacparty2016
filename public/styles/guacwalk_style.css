@@ -1,19 +1,66 @@
+/* @media screen and (min-width: 800px) {
+  body {
+    background: url(https://i.imgur.com/dh0wumY.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+    margin: 0px;
+  }
+
+  .spotlight {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(
+      circle,
+      transparent 160px,
+      rgba(0, 0, 0, 0.85) 200px
+    );
+  }
+} */
+
 body {
-  background: url(https://i.imgur.com/dh0wumY.png) no-repeat center;
-  background-size: cover;
-  width: 100vw;
   height: 100vh;
-  cursor: none;
-  margin: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    #936549,
+    #222
+  );
 }
 
-.spotlight {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background-image: radial-gradient(
-    circle,
-    transparent 160px,
-    rgba(0, 0, 0, 0.85) 200px
-  );
+
+/* .avoportal {
+  --x: 0px;
+  --y: 0px;
+  background-image: url(https://i.imgur.com/dh0wumY.png);
+  background-size: 1000px;
+  background-position: var(--x) var(--y);
+  border: 1px solid white;
+
+  width: 300px;
+  height: 300px;
+} */
+#wrapper {
+  width:150px; /* width of viewport in your case 100% */
+  height:150px; /* height of viewport in your case 100% */
+  overflow:hidden;
+  margin:10px 0 0 0;
+  border:1px solid #777;
+  position:fixed;
+}
+
+#map {
+  position:relative; /* what #map img is relative to */
+}
+
+#map img{
+  /* position:absolute; /* need this to make dragging easy */ */
+  top:300px;
+  left:300px;
+    background-size: cover;
+  border:0 none transparent;
 }
