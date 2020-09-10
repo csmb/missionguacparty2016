@@ -36,8 +36,6 @@ body {
 }
 
 .mobile {
-  /* height: 100vh; */
-  /* margin: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,13 +47,12 @@ body {
 }
 
 #wrapper {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
   margin: 15%;
   margin-top: 50%;
-  /* width: 50%; */
-  border: 1px solid #777;
+  border-radius: 50%;
   position: fixed;
 }
 
@@ -63,8 +60,9 @@ body {
   position: relative;
 }
 
-#map img{
-  /* position:absolute; /* need this to make dragging easy */ */
-  background-size: cover;
-  border:10px none transparent;
+#map img {
+  background-size: 100px 100px;
+  border: 10px;
+  width: 2000px;
+  height: 2000px;
 }
