@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0px;
-  color: green;
+  background-color: green;
 }
 
 .mobile {
@@ -47,10 +47,9 @@ body {
 }
 
 #wrapper {
-  width: 350px;
-  height: 350px;
+  width: 100vw;
+  height:50vh;
   overflow: hidden;
-  margin: 15%;
   margin-top: 50%;
   border-radius: 50%;
   position: fixed;
