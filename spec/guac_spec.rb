@@ -14,7 +14,7 @@ describe 'Guac Party! homepage' do
   end
 
   it 'should welcome you with dreams of guacamole' do
-    last_response.body.must_include 'Indian Summer Guac-Off'
+    last_response.body.must_include 'Guac-Off'
   end
 
   it 'should always take place in San Francisco' do
